@@ -2,14 +2,107 @@
 <html>
     <head>
         <title>Devi Sri</title>
+        <style>
+      body {
+            background-color: hsla(120,100%,70%,0.3);
+            border: 4px solid black;
+            padding: 60px;
+            
+        }
+        img{
+            background-color: black;
+        }
+            h1 {
+                background-color: skyblue;
+                color:blue;
+                font-size: 40px;
+            }
+            h2{
+                color:brown;
+                
+            }
+            p {
+                color: darkgreen;
+                font-size: 20px;
+            }
+            ul {
+                color: darkgreen;
+            }
+            #skills, #hobbies {
+                color: brown;
+            }
+            #p {
+                border:4px double blue;
+                margin-bottom: 50px;
+                margin-top:50px;
+                margin-right: 50px;
+                margin-left: 50px;
+                padding: 50px;
+                
+            }
+            span {
+                color:pink;
+                align:center;
+            }
+           
+           p {
+               font-size:36px;
+               color:#993399;
+               background-color: #00ffff;
+               border: 4px solid hsla(120,100%,70%,0.3);
+               height:200px;
+               width:600px;
+               margin-bottom: 50px;
+               margin-top: 50px;
+           }
+           span {
+               
+               font-size:36px;
+               color:violet;
+               background-color: #a885a;
+                
+               height:400px;
+               width:400px;
+               /*border:4px solid #00e6e6;*/
+               
+           }
+           .adress{
+               color:#9900ff;
+               font-size:14px;
+               font-weight: bold;
+           }
+           .contact{
+               
+               color:#5c0099;
+               font-size:14px;
+               font-style: italic;
+           }
+           .c{
+                 color:#0f001a;
+               font-size:14px;
+               font-style: arial;    
+           }
+           fhk {
+               
+               border:4px solid blue;
+               margin-top: 50px;
+               margin-bottom: 50px;
+               margin-left:50px;
+               margin-right: 50px;
+           
+               
+           }
+           
+           
+        </style>
     </head>
-    <body bgcolor="skyblue">
-        <h1 align="center">Hello, I'm DeviSri</h1>
+    <body>
+        <h1 align="center">Hello, I'm DeviSri <img src="https://tap.ibhubs.in/assets/static/ibhubs_logo.png" alt="ibhubs logo" width="50" height="50" ></h1>
         <h2>About Me</h2>
-        <p>I am Tech enthusiast and I am flesible to adapt.
+        <p id="p">I am <i><b>Tech enthusiast</b></i> and I am <span>flexible</span> to adapt.
         Now I am learning tech to knowing depth in fullstack to becoming a fullstack developer.
          </p>
-         <h3>Skills</h3>
+         <h3 id="skills">Skills</h3>
          <ul>
              <li>HTML</li>
              <li>C Programming</li>
@@ -17,12 +110,24 @@
              <li>Basic Knowledge on aws server</li>
              <li>Basic knowledge on Django</li>
          </ul>
-         <h3>Hobbies</h3>
+         <h3 id="hobbies">Hobbies</h3>
          <ul>
              <li>Cooking</li>
              <li>Rj</li>
              <li>Talking with friends</li>
              
          </ul>
+        <div>
+         <p class="adress">
+            Village: Pamulaparru
+            District: west godavari
+            Pincode: 534199
+        </p>
+        <p class="contact c">
+            Contact:9999999999
+        </p>
+        <span>INCREDIBLE</span>
+        </div>
+        <fhk>border</fhk>
     </body>
 </html>
