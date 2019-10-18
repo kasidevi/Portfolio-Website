@@ -30,6 +30,10 @@
                         height: 100px;
                         background: blue;
                 }
+
+                .container {
+                        margin: 50px;
+                }
         </style>
 
         <body>
@@ -39,6 +43,28 @@
                                 <div class="green col-6 order-2 col-md-4 order-md-2  col-xl-3 order-xl-3"></div>
                                 <div class="purple col-6 order-3 col-md-4 order-md-4  col-xl-3 order-xl-2"></div>
                                 <div class="blue col-6 order-4 col-md-4 order-md-1  col-xl-3 order-xl-1"></div>
+                        </div>
+                </div>
+
+
+                <div class="container">
+                        <div class="row d-md-none">
+                                <div class="col-6 yellow"></div>
+                                <div class="col-6 green"></div>
+                                <div class="col-6 purple"></div>
+                                <div class="col-6 blue"></div>
+                        </div>
+                        <div class="row d-none d-md-flex d-xl-none">
+                                <div class="col-4 blue"></div>
+                                <div class="col-4 green"></div>
+                                <div class="col-4 yellow"></div>
+                                <div class="col-4 purple"></div>
+                        </div>
+                        <div class="row d-none d-xl-flex">
+                                <div class="col-3 purple"></div>
+                                <div class="col-3 blue"></div>
+                                <div class="col-3 green"></div>
+                                <div class="col-3 yellow"></div>
                         </div>
                 </div>
         </body>
