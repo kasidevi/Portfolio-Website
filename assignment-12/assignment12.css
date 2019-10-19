@@ -1,0 +1,112 @@
+.s10 {
+    font-size: 12px;
+    color: grey;
+}
+
+
+.bc-w {
+
+    background-color: white;
+    padding: 5px;
+
+}
+
+.createacnt {
+    font-size: 13px;
+}
+
+.btn {
+    font-size: 13px;
+}
+
+.bc-grey {
+
+    background-color: #f2f2f2;
+}
+
+.bc-grey1 {
+    font-size: 15px;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.padtop {
+    padding-top: 150px;
+}
+
+.p {
+    font-size: 10px;
+    color: grey;
+}
+
+/*.btn {}*/
+
+.imgpad {
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.textcenter {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.padbot {
+    padding-bottom: 50px;
+}
+
+.pad {
+    padding-left: 50px;
+}
+
+.experienceimg {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.border {
+    border-left: 50px solid white;
+    margin: 30px;
+}
+
+.p1 {
+    font-size: 10px;
+}
+
+.pad1 {
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.p2 {
+    font-size: 7px;
+    color: grey;
+}
+
+.textpad {
+    padding-top: 70px;
+}
+
+.textpad1 {
+    padding-top: 100px;
+}
+
+.rowmarg {
+    margin-bottom: 50px;
+}
+
+.border1 {
+    border: 1px solid #f2f2f2;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.border {
+    border: 1px solid #f2f2f2;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
