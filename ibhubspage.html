@@ -10,87 +10,115 @@
                 <script src="bootstrap/popper.min.js"></script>
                 <script src="bootstrap/bootstrap.min.js"></script>
 
+
                 <style>
-                        .r1 {
-                                background-color: #003399;
-                                padding-left: 0px;
-                                padding-right: 0px;
-                                padding-top: 100px;
-                                padding-bottom: 150px;
+                        .font15 {
+                                font-size: 13px;
+                                padding-top: 20px;
+                                padding-bottom: 20px;
                         }
 
-                        .website {
-                                margin-bottom: 0px;
-                                border: 1px solid white;
-                        }
-
-                        .r2 {
-                                padding-top: 50px;
-
-                        }
-
-                        /*  body {
-                                padding-left: 0px;
-                                padding-right: 0px;
-                        }*/
-
-                        .container {
+                        .background-w {
+                                background-color: white;
                                 position: fixed;
+                        }
+
+                        .r1 {
+                                padding-top: 50px;
+                        }
+
+                        ul {
+                                list-style-type: none;
                                 background-color: white;
                                 padding-right: 0px;
+                                text-align: right;
+                        }
+
+                        li {
+                                display: block;
+                                text-align: center;
+                                padding: 14px 16px;
+                                text-decoration: none;
+                                float: left;
+                                color: black;
+                        }
+
+                        .keepintouch {
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                border: 1px solid orange;
+                                color: orange;
+                                border-radius: 5px;
+                        }
+
+                        .iblogo {
+                                width: 50px;
                         }
                 </style>
         </head>
         <div class="container">
-                <div class="row">
+                <div class="row background-w">
+                        <!--        <div class="col-3">
+                                <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-2">img</div>
+                                        <div class="col-8"></div>
+                                </div>
+                        </div>
+
+                        <div class="col-7">
+                                <div class="row font15">
+                                        <div class="col-2">About us</div>
+                                        <div class="col-2">Mentors</div>
+                                        <div class="col-3">Talent Accelerator</div>
+                                        <div class="col-2">programs</div>
+                                        <div class="col-2">startups</div>
+                                        <div class="col-1">Events</div>
+                                </div>
+                        </div>
+                        <div class="col-2">
+                                <div class="row">
+                                        <div class="col-6">keep in touch</div>
+                                </div>
+                        </div> -->
+
+                        <div class="col-12 font15">
+                                <img class="iblogo" src="static/ibhubs_logo.png" alt="ib hubs logo">
+                                <ul>
+
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Mentors</a></li>
+                                        <li><a href="#">Talent Accelerator</a></li>
+                                        <li><a href="#">Programs</a></li>
+                                        <li><a href="#">Startups</a></li>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a class="keepintouch" href="#">keep in touch</a></li>
+                                </ul>
+
+                        </div>
+                </div>
+
+                <div class="row r1">
                         <div class="col-12">
                                 <div class="row">
-                                        <div class="col-2">img</div>
-                                        <div class="col-8">
-                                                <div class="row">
-                                                        <div class="col-12"></div>
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-2">Home</div>
-                                                        <div class="col-2">About us</div>
-                                                        <div class="col-2">Mentors</div>
-                                                        <div class="col-2">Talent Accelerator</div>
-                                                        <div class="col-2">startups</div>
-                                                        <div class="col-2">programs</div>
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-12"></div>
-                                                </div>
-                                        </div>
-                                        <div class="col-2">
-                                                <div class="row">
-                                                        <div class="col-6">img</div>
-                                                        <div class="col-6">keep in touch</div>
-                                                </div>
-                                        </div>
+                                        <div class="col-3"></div>
+                                        <div class="col-6">
+                                                <h2>We are becoming one of the World's Largest Incubators! 5,00,000+ sq. ft.</h2>
+                                                <p>India • UK • Australia • Singapore • Dubai 45 Hubs across the Globe</p>
 
+                                                <p>Walk through our <span style="color:orange">vision!</span></p>
+                                        </div>
+                                        <div class="col-3"></div>
+                                </div>
+                                <div class="row r2">
+                                        <div class="col-4"></div>
+                                        <div class="col-2 website">iB Hubs Across the world </div>
                                 </div>
                         </div>
                 </div>
-        </div>
-        <div class="row r1">
-                <div class="col-12">
-                        <div class="row">
-                                <div class="col-3"></div>
-                                <div class="col-6">
-                                        <h2>We are becoming one of the World's Largest Incubators! 5,00,000+ sq. ft.</h2>
-                                        <p>India • UK • Australia • Singapore • Dubai 45 Hubs across the Globe</p>
 
-                                        <p>Walk through our <span style="color:orange">vision!</span></p>
-                                </div>
-                                <div class="col-3"></div>
-                        </div>
-                        <div class="row r2">
-                                <div class="col-4"></div>
-                                <div class="col-2 website">iB Hubs Across the world </div>
-                        </div>
-                </div>
         </div>
-
 
 </html>

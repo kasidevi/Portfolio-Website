@@ -1,0 +1,132 @@
+.githublogo {
+
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.text {
+
+    color: #333;
+}
+
+.font10 {
+    font-size: 10px;
+}
+
+.signup {
+    border: 1px solid white;
+}
+
+
+form {
+    background-color: grey;
+}
+
+.grey {
+    font-size: 10px;
+    color: grey;
+}
+
+.third {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: #f2f2f2;
+}
+
+.img4r {
+
+    padding: 30px;
+    width: 150px;
+}
+
+.border {
+    padding: 15px;
+    border: 1px solid grey;
+}
+
+.center {
+    padding-top: 30px;
+    text-align: center;
+}
+
+span {
+    border: 1px solid #ccf5ff;
+    background-color: #ccf5ff;
+    margin: 3px;
+}
+
+h6 {
+    padding-top: 20px;
+}
+
+.hash {
+    background-color: #ccf5ff;
+    text-align: center;
+    border: 1px solid #ccf5ff;
+    width: 20px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.star1 {
+
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+
+}
+
+.star {
+    width: 20px;
+}
+
+.paddingtop {
+    padding-top: 30px;
+}
+
+.borderbot {
+    border-bottom: 1px solid lightgrey;
+    padding-top: 10px;
+}
+
+.img5r {
+    width: 40px;
+}
+
+.star1 {
+    float: right;
+    padding-left: 20px;
+}
+
+.loadmore {
+    margin-top: 20px;
+
+    border: 1px solid lightgrey;
+    text-align: center;
+}

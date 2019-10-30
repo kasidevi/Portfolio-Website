@@ -209,3 +209,11 @@
 .signlp {
     padding-left: 7px;
 }
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
