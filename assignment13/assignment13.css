@@ -3,6 +3,7 @@
     background-color: white;
 }
 
+
 ul {
     list-style-type: none;
     overflow: hidden;
@@ -10,11 +11,11 @@ ul {
 }
 
 li {
-    float: left;
+    display: inline;
 }
 
 li a {
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -25,6 +26,9 @@ ol {
     list-style-type: none;
     overflow: hidden;
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 }
 
 .text {
@@ -60,8 +64,8 @@ form {
 
 .img4r {
 
-    padding: 30px;
-    width: 150px;
+    padding: 15px;
+    width: 100px;
 }
 
 .border {
@@ -75,13 +79,13 @@ form {
 }
 
 span {
-    border: 1px solid #ccf5ff;
+    border: 2px solid white;
     background-color: #ccf5ff;
     margin: 3px;
 }
 
 h6 {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .hash {
@@ -107,7 +111,7 @@ h6 {
 }
 
 .paddingtop {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .borderbot {
@@ -126,7 +130,33 @@ h6 {
 
 .loadmore {
     margin-top: 20px;
-
     border: 1px solid lightgrey;
+    text-align: center;
+}
+
+.pad0 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.msignup {
+    color: white;
+    border: 1px solid white;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.background {
+    background-color: black;
+    padding-top: 20px;
+    padding: 10px;
+}
+
+.paddingr2 {
+    padding-top: 20px;
+}
+
+.mexplore {
     text-align: center;
 }

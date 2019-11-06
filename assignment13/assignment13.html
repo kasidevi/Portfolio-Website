@@ -2,22 +2,23 @@
 <html>
 
   <head>
-    <link href="assignment13.css" rel="stylesheet">
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
     <script src="../bootstrap/jquery.min.js"></script>
     <script src="../bootstrap/popper.min.js"></script>
     <script src="../bootstrap/bootstrap.min.js"></script>
+    <link href="assignment13.css" rel="stylesheet">
   </head>
 
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-12 font10">
+        <div class="col-12 d-none d-xl-flex font10">
 
           <ul class="ulbgblack">
-            <li><img class="githublogo" src="assignment13/assets/github-logo.svg" alt="githublogo"></li>
+            <li><img class="githublogo" src="assets/github-logo.svg" alt="githublogo"></li>
             <li><a href="#">Why GitHub?</a></li>
             <li><a href="#">Enterprise</a></li>
             <li><a href="#">Explore</a></li>
@@ -33,18 +34,43 @@
           </ul>
         </div>
 
-
-        <div class="col-12 font10">
-
-          <ol>
-            <li><a class="text" href="#">Explore</a></li>
-            <li><a class="text" href="#">Topics</a></li>
-            <li><a class="text" href="#">Trending</a></li>
-            <li><a class="text" href="#">Collections</a></li>
-            <li><a class="text" href="#">Events</a></ol>
+        <!-- mobile and tablet starting row-->
+        <div class="col-12 d-xl-none background">
+          <div class="row">
+            <div class="col-2">
+              <img class="githublogo" src="assets/github-logo.svg" alt="githublogo">
+            </div>
+            <div class="col-6"></div>
+            <div class="col-2 msignup">Sign up</div>
+            <div class="col-2"></div>
+          </div>
         </div>
 
-        <div class="col-12 third">
+
+        <div class="col-12 d-none d-md-flex d-xl-none font10 paddingr2">
+
+          <ol>
+            <li><a class="text pad0" href="#">Explore</a></li>
+            <li><a class="text pad0" href="#">Topics</a></li>
+            <li><a class="text pad0" href="#">Trending</a></li>
+            <li><a class="text pad0" href="#">Collections</a></li>
+            <li><a class="text pad0" href="#">Events</a></ol>
+        </div>
+        <div class="col-12 d-flex d-md-none mexplore">
+          <li><a href="#">Explore</a></li>
+        </div>
+
+        <div class="col-12 d-flex d-md-none font10 paddingr2">
+
+          <ol>
+
+            <li><a class="text pad0" href="#">Topics</a></li>
+            <li><a class="text pad0" href="#">Trending</a></li>
+            <li><a class="text pad0" href="#">Collections</a></li>
+            <li><a class="text pad0" href="#">Events</a></ol>
+        </div>
+
+        <div class="col-12  third">
           <h3>Topics</h3>
           <p class="grey">Browse popular topics on github.</p>
 
@@ -52,32 +78,32 @@
 
         <div class="col-12">
           <div class="row center">
-            <div class="col-2"></div>
-            <div class="col-2 border">
+            <div class="col-2 "></div>
+            <div class="col-12 col-md-2 border">
               <img class="img4r" src="assets/opengl.png" alt="openlg">
               <h5>OpenGL</h5>
               <p class="grey">OpenGL is a software interface taht allows a programmer to communicate with graphics hardware. graphics</p>
             </div>
             <div class="col-1"></div>
-            <div class="col-2 border">
+            <div class=" col-12 col-md-2 border">
               <img class="img4r" src="assets/flask.png" alt="openlg">
               <h5>Flask</h5>
               <p class="grey">Flask is a web framework for python based on the werkzeug toolkit.</p>
             </div>
             <div class="col-1"></div>
-            <div class="col-2 border">
+            <div class="col-12 col-md-2 border">
               <img class="img4r" src="assets/gradle.png" alt="openlg">
               <h5>Gradle</h5>
               <p class="grey">Gradle is an open-source build tool that helps teams build, automate and deliver better software, faster.</p>
             </div>
-            <div class="col-2"></div>
+            <div class="col-2 d-none d-md-flex"></div>
           </div>
         </div>
 
-        <div class="col-2"></div>
+        <div class="col-2 d-none d-md-flex"></div>
         <div class="col-6">
-          <div class="row paddingtop borderbot">
-            <div class="col-12">
+          <div class="row borderbot">
+            <div class="col-12 paddingtop">
               <h4>All featured topics</h4>
             </div>
 
@@ -339,9 +365,10 @@
         </div>
 
 
-        <div class="col-3">
+        <div class="col-12 col-xl-3">
           <h6>Popular topics</h6>
-          <p class="font10"><span><a href="#">react  </a></span>
+          <p class="font10">
+            <span><a href="#">react  </a></span>
             <span><a href="#">javascript  </a></span>
             <span><a href="#">css  </a></span>
             <span><a href="#">python  </a></span>
@@ -352,7 +379,7 @@
             <span><a href="#">nci-itcr  </a></span>
             <span><a href="#">solidus-extension </a></span></p>
         </div>
-        <div class="col-1"></div>
+        <div class="col-1 d-none d-xl-flex"></div>
 
       </div>
     </div>
