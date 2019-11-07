@@ -71,6 +71,7 @@ form {
 .border {
     padding: 15px;
     border: 1px solid grey;
+
 }
 
 .center {
@@ -159,4 +160,15 @@ h6 {
 
 .mexplore {
     text-align: center;
+    color: black;
+}
+
+.equiv :hover {
+
+    color: white;
+    font-size: 30px;
+}
+
+.mobmargin {
+    margin-bottom: 30px;
 }
