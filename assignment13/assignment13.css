@@ -172,3 +172,7 @@ h6 {
 .mobmargin {
     margin-bottom: 30px;
 }
+
+.mobileborder {
+    border-bottom: 1px solid grey;
+}
