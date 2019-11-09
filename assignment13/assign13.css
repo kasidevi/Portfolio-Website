@@ -1,3 +1,11 @@
+.githublogo {
+    filter: invert(100%);
+}
+
+.container {
+    margin-top: 30px;
+}
+
 li {
     list-style-type: none;
     display: inline-block;
@@ -11,15 +19,12 @@ li {
 
 .header {
     background-color: black;
+    padding-top: 10px;
     padding-right: 0px;
     padding-left: 0px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-
-.githublogo {
-    background-color: white;
 }
 
 .signup {
@@ -41,8 +46,6 @@ li {
     border-top: 1px solid grey;
     background-color: #f2f2f2;
     margin-bottom: 30px;
-
-
 }
 
 .center {
@@ -62,7 +65,7 @@ li {
     border: 1px solid #e6ffff;
     padding: 5px;
     background-color: #e6ffff;
-    width: 40px;
+    width: 30px;
     height: 50px;
     text-align: center;
 
@@ -81,4 +84,30 @@ li {
 
 .margintop {
     margin-top: 30px;
+}
+
+.mobilemargin {
+    margin-bottom: 30px;
+}
+
+.mexplore {
+    color: black;
+    text-align: center;
+}
+
+.equiv {
+    font-size: 30px;
+}
+
+.msignup {
+    margin-top: 5px;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 10px;
+}
+
+.pad5 {
+    padding: 3px;
+    background-color: lightgrey;
 }
