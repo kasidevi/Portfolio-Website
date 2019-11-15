@@ -53,7 +53,7 @@ li {
 }
 
 .img4r {
-    width: 50%;
+    width: 100px;
 }
 
 .borderbot {
@@ -86,13 +86,16 @@ li {
     margin-top: 30px;
 }
 
+.margintop20 {
+    margin-top: 20px;
+}
+
 .mobilemargin {
     margin-bottom: 30px;
 }
 
 .mexplore {
     color: black;
-    text-align: center;
 }
 
 .equiv {
@@ -110,4 +113,8 @@ li {
 .pad5 {
     padding: 3px;
     background-color: lightgrey;
+}
+
+.lblock {
+    display: block;
 }
