@@ -269,3 +269,26 @@ a {
     padding-left: 30px;
     margin-bottom: 100px;
 }
+
+/*
+@media (min-width:414px) and (min-width:567px) {
+    .avoidSuspicious {
+        display: flex;
+    }
+
+    .experinceimg {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (min-width:992px) {
+    .avoidSuspicious {
+        display: flex;
+    }
+    .imgavoid {
+        display: none;
+    }
+
+
+}
+*/
