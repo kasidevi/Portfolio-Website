@@ -1,0 +1,120 @@
+.header {
+    /*background-color: #24478f;
+    padding: 10px;
+
+        height: 200px;*/
+    background-color: #24478f;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #24478f, skyblue);
+    border-radius: 75px;
+    /* Standard syntax (must be last) */
+}
+
+.center {
+    text-align: center;
+}
+
+.footer {
+    background-color: #24478f;
+    text-align: right;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.text_navyblue {
+    color: #24478f;
+    background-color: #80dfff;
+    padding: 5px;
+    border-bottom-right-radius: 75px;
+}
+
+body {
+    background-color: #ebf0fa;
+}
+
+.text_white {
+    color: white;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    padding-top: 50px;
+}
+
+.card {
+    width: 90%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    background-color: black;
+    padding: 25px;
+    color: white;
+}
+
+.card-text {
+    background-clip: white;
+}
+
+
+/*.inline-block {
+    width: 49%;
+    display: inline-block;
+}*/
+
+@media (min-width:414px) and (max-width:767px) {
+    img {
+        width: 70%;
+        /*    height: 50%;*/
+        padding: 10px;
+        border-radius: 30px;
+    }
+    .list {
+        list-style-type: none;
+        padding: 5px;
+    }
+
+}
+
+@media(min-width:768px) {
+    .content {
+        width: 49%;
+        display: inline-block;
+    }
+
+    img {
+        width: 45%;
+        /*    height: 50%;*/
+        padding: 5px;
+        border-radius: 30px;
+    }
+
+    .list {
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px;
+        width: 40%;
+
+    }
+}
+
+.verticalstrip {
+    background-color: skyblue;
+    border-radius: 75px;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}

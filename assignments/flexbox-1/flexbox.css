@@ -1,0 +1,37 @@
+.flexbox {
+    display: flex;
+    background-color: white;
+    height: 500px;
+    overflow: auto;
+}
+
+img {
+    width: 80px;
+}
+
+.item {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.html {
+    /*flex-grow: 1;*/
+    background-color: #6699cc;
+}
+
+.css {
+    /*flex-grow: 1;*/
+    background-color: #8f00b3;
+}
+
+.bootstarp {
+    /*flex-grow: 1;*/
+    background-color: #ff9900;
+}
+
+.js {
+    /*flex-grow: 1;*/
+    background-color: #0099ff;
+}
