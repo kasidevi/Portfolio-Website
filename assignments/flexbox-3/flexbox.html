@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Flexbox</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="flexbox.css" />
+    <style>
+      .flexbox {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .flexbox1,
+      .flexbox2 {
+        display: flex;
+        /*justify-content: space-around;*/
+        flex-direction: column;
+        border: 5px solid #e6e600;
+        border-radius: 15px;
+        background-color: #ffffb3;
+        padding: 8px;
+        width: 47%;
+        margin: 5px;
+      }
+
+      .flexbox2 {
+        flex-grow: 1;
+      }
+
+      .heading {
+        font-size: 25px;
+        color: #0080ff;
+      }
+
+      .im {
+        align-self: center;
+      }
+
+      .space-between {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+
+      .bt {
+        font-size: 25px;
+        text-align: center;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        background-color: #44cc00;
+        border-bottom: 1px solid green;
+        border-right: 1px solid green;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flexbox">
+      <div class="flexbox1">
+        <div class="item im"><img src="assets/computer.jpg" alt="computer"></div>
+        <div class="item heading">Computer Starter Kit</div>
+        <div class="item">
+          <p>This is the best computer money can buy,if you don't have much money.</p>
+        </div>
+        <ul>
+          <li>Computer</li>
+          <li>monitor</li>
+          <li>Keyboard</li>
+          <li>Mouse</li>
+        </ul>
+        <a href="#">
+          <div class="item bt">BUYNOW</div>
+        </a>
+      </div>
+
+      <div class="flexbox2">
+        <div class="item im"><img src="assets/printer.png" alt="printer"></div>
+        <div class="item heading">Printer</div>
+        <p>Only capable of peinting ASCII arts</p>
+        <div class="space-between">
+          <ul>
+            <li>Paper and Ink not included.</li>
+          </ul>
+          <a href="#">
+            <div class="item bt">BUYNOW</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
