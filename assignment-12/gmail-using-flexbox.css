@@ -1,0 +1,293 @@
+.flexbox {}
+
+.gmail-img {
+    width: 40px;
+    height: 35px;
+}
+
+.a,
+.a-desk,
+.a-desk1 {
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    align-self: center;
+    padding: 10px;
+}
+
+.gmail-first {
+    color: grey;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    align-items: center;
+    padding: 15px;
+    /*margin: 15px;*/
+    width: 100%;
+}
+
+.footer1 {
+    background-color: #f2f2f2;
+}
+
+.h2,
+.heading,
+.heading-tab,
+.item1,
+.item2 {
+    color: grey;
+}
+
+.heading,
+.heading-tab {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+    * {
+        /*margin: 10px;*/
+    }
+    .head1,
+    .head2,
+    .head1-child {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .a-desk,
+    .a-desk1,
+    .experienceimg,
+    .landingPage1,
+    .heading-tab {
+        display: none;
+    }
+    .head1 {
+        border-bottom: 1px solid grey;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .items2,
+    .items1,
+    .items2-child,
+    .item1 {
+        display: flex;
+        /*justify-content: space-between;*/
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+
+    .item2 {
+        padding: 5px;
+    }
+    .div3,
+    .div4 {
+        margin: 10px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-size: 30px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+@media (min-width:769px) {
+
+    h2,
+    h3,
+    h4 {
+        font-size: 30px;
+    }
+    * {}
+    .flex-tabdesk,
+    .head1,
+    .head1-child,
+    .head2 {
+        display: flex;
+        width: 100%;
+    }
+    .head2 {
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .a,
+    .mimg,
+    .landingPage2,
+    .heading-tab {
+        display: none;
+    }
+    .tab-div3,
+    .tab-div5,
+    .tab-div6,
+    .div5-child {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .tab-div6 {
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    .div1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .a-desk1-create-account {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .a-desk1 {
+        align-self: flex-start;
+    }
+    .div3,
+    .div4,
+    .div5,
+    .div6 {
+        align-items: flex-start;
+        width: 100%;
+    }
+    .div3,
+    .div4 {
+        margin: 5px;
+    }
+    .footer,
+    .items1,
+    .items2,
+    .items2-child,
+    .questionmark {
+        display: flex;
+        justify-content: start-flex;
+        width: 100%;
+    }
+    .items2-child,
+    .item1 {
+        justify-content: start-flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    .item2 {
+        margin-right: 5px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1025px) {
+    .heading-tab {
+        display: flex;
+        background-color: #f2f2f2;
+    }
+    .heading {
+        display: none;
+    }
+}
+
+@media (min-width:1026px) {
+
+    .footer1 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .items2-child,
+    .item1 {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    .heading {
+        justify-content: space-around;
+    }
+}
+
+.mimg-playstore,
+.mimg-apple {
+    width: 16%;
+    height: 5%;
+}
+
+.mimg,
+.landingPage1,
+.landingPage2 {
+    width: 50%;
+}
+
+.experienceimg {
+    width: 100%;
+    align-self: center;
+}
+
+.div2,
+.div5 {
+    background-color: white;
+}
+
+.div2-child {
+    display: flex;
+    justify-content: center;
+}
+
+.landingPage {
+    width: 100%;
+}
+
+.div7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionmark {
+    width: 20px;
+    height: 20px;
+}
+
+.footer,
+.footer1 {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.heading-tab {
+    padding-left: 10px;
+}
+
+.div7,
+.tab-div6,
+.tab-div5,
+.tab-div3,
+.div2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.agetmail {
+    margin: 10px;
+}
