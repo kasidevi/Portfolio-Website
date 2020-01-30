@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+}
+
+.flexbox1,
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+* {
+    /*border: 1px solid black;*/
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.sim {
+    width: 15px;
+    padding-left: 10px;
+}
+
+.bar,
+.fa-angle-right {
+    text-decoration: none;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    color: grey;
+    font-weight: bold;
+}
+
+.flexgrow {
+    flex-grow: 1;
+}
+
+.recents {
+    color: #00cc00;
+}
+
+.line1,
+.number,
+.bar,
+.footer,
+.call {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.grey,
+.fas,
+.material-icons {
+    color: grey;
+    text-decoration: none;
+}
+
+.dailer {
+    border-top: 1px solid grey;
+    border-radius: 20px;
+}
+
+.number,
+.bar {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    font-size: 30px;
+}
+
+.bar {
+    color: grey;
+}
+
+.call1,
+.call2 {
+    background-color: green;
+}
+
+.call1,
+.call2 {
+    font-size: 30px;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.call1 {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-right: 2px;
+}
+
+.call2 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.flexbox1,
+.line1,
+.footer {
+    margin: 20px;
+}
+
+.fas,
+.material-icons {
+    font-size: 25px;
+    text-decoration: none;
+}

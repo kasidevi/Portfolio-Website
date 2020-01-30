@@ -4,10 +4,15 @@ body {
   font-family: sans-serif;
 }
 
-.flexbox {
+.flexbox,
+.article-class {
   display: flex;
   flex-wrap: wrap;
   /*height:100px;*/
+}
+
+.article-class {
+  flex-direction: column;
 }
 
 .header {
@@ -23,15 +28,16 @@ body {
 }
 
 .Main-class {
+  border: 2px solid white;
   background-color: white;
   flex-grow: 1;
-  height: 400px;
+  height: 500px;
   width: 500px;
 }
 
 .article-class {
   border: 2px solid black;
-  width: 500px;
+  margin: 30px;
   flex-grow: 1;
   height: 300px;
 }
@@ -45,7 +51,7 @@ body {
 .section {
   border: 2px dashed black;
   flex-grow: 1;
-  margin: 20px;
+  margin: 15px;
 }
 
 div {
