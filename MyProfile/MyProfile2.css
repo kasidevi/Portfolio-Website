@@ -1,0 +1,17 @@
+.flexbox-child1,
+.flexbox-child2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.flexbox {
+
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    text-decoration: none;
+}
