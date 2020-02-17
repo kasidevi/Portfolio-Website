@@ -1,0 +1,36 @@
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <script>
+            // let h1Element = document.createElement("h1"); //document object represents the whole html document
+            // h1Element.textContent = "New Heading!!!";
+            // document.body.appendChild(h1Element);
+            /* let myButton = document.createElement("button");
+             myButton.innerHTML = "submit";
+             myButton.onclick = () => alert("Hello Js"); //arrow function
+             document.body.appendChild(myButton);*/
+
+            /*let myImage = document.createElement("img");
+            myImage.src = "../static/Hobbies/camera-indigo.svg";
+            myImage.alt = "image text";
+            myImage.onclick = () => alert("image click triggered");
+            document.body.appendChild(myImage);*/
+            let myFunction = () => {
+                let headingObject = document.getElementById("demo");
+                headingObject.innerHTML = "Hello!";
+            };
+            let myFunction1 = () => {
+                let headingObject = document.getElementById("demo");
+                headingObject.innerHTML = "Hello JS!";
+            };
+        </script>
+        <h1 id="demo">This is initial heading....!</h1>
+        <button onclick='myFunction()'>Submit</button>
+        <button onclick='myFunction1()'>Submit</button>
+    </body>
+
+</html>
