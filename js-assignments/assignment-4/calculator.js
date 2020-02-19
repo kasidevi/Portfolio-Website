@@ -1,30 +1,44 @@
 //Write your javascript logic here
 
-function onClick(argument) {
+function display_input(element) {
 
   let expression = document.getElementById('result_bar');
-  if (argument == "=") {
+
+  if (element == "=") {
     let output = getExpressionOutput(expression.innerHTML);
-    // alert(output)
     document.getElementById('result_bar').innerHTML = output;
   }
-  else if (argument == "AC") {
+
+  else if (element == "AC") {
     document.getElementById('result_bar').innerHTML = '0';
   }
-  else {
-    expression.innerHTML += argument;
+
+  else if (document.getElementById('result_bar').innerHTML == 0) {
+    expression.innerHTML = element;
   }
+
+  else {
+    expression.innerHTML += element;
+  }
+
 }
 
 function getExpressionOutput(input) {
   try {
-    // alert(eval(input))
     return eval(input);
   }
   catch (input) {
     return "Invalid Expression";
   }
+
 }
+
+
+
+
+
+
+
 
 
 /*

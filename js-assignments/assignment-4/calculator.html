@@ -10,7 +10,7 @@
   </head>
 
   <body id="console-root">
-    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <!--<script src="https://tap.ibhubs.in/utils/console.js"></script>-->
     <script src="calculator.js"></script>
 
     <!-- Write your html code from here-->
@@ -19,38 +19,38 @@
       <div class="calculator_keypad">
 
         <div class="keys">
-          <p onclick="onClick('+')" class="operator number">+</p>
-          <p onclick="onClick('7')" class="number">7</p>
-          <p onclick="onClick('4')" class="number">4</p>
-          <p onclick="onClick('1')" class="number">1</p>
-          <p onclick="onClick('0')" class="number">0</p>
+          <p onclick="display_input('+')" class="operator number">+</p>
+          <p onclick="display_input('7')" class="number">7</p>
+          <p onclick="display_input('4')" class="number">4</p>
+          <p onclick="display_input('1')" class="number">1</p>
+          <p onclick="display_input('0')" class="number">0</p>
         </div>
 
         <div class="keys">
-          <p onclick="onClick('-')" class="operator number">-</p>
-          <p onclick="onClick('8')" class="number">8</p>
-          <p onclick="onClick('5')" class="number">5</p>
-          <p onclick="onClick('2')" class="number">2</p>
-          <p onclick="onClick('.')" class="number">.</p>
+          <p onclick="display_input('-')" class="operator number">-</p>
+          <p onclick="display_input('8')" class="number">8</p>
+          <p onclick="display_input('5')" class="number">5</p>
+          <p onclick="display_input('2')" class="number">2</p>
+          <p onclick="display_input('.')" class="number">.</p>
         </div>
 
         <div class="keys">
-          <p onclick="onClick('*')" class="operator number">x</p>
-          <p onclick="onClick('9')" class="number">9</p>
-          <p onclick="onClick('6')" class="number">6</p>
-          <p onclick="onClick('3')" class="number">3</p>
-          <p onclick="onClick('AC')" class="number AC">AC</p>
+          <p onclick="display_input('*')" class="number operator key_in_3rd_column">x</p>
+          <p onclick="display_input('9')" class="number key_in_3rd_column">9</p>
+          <p onclick="display_input('6')" class="number key_in_3rd_column">6</p>
+          <p onclick="display_input('3')" class="number key_in_3rd_column">3</p>
+          <p onclick="display_input('AC')" class="AC key_in_3rd_column">AC</p>
         </div>
 
         <div class="keys">
-          <p onclick="onClick('/')" class="operator number">/</p>
-          <p onclick="onClick('=')" class="equal">=</p>
+          <p onclick="display_input('/')" class="operator number">/</p>
+          <p onclick="display_input('=')" class="equal">=</p>
         </div>
 
       </div>
     </div>
 
-    <button onclick="onClickShowOutput()">Show Output</button>
+    <button onclick="OnclickShowOutput()">Show Output</button>
     <div id="output"></div>
   </body>
 
