@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RGB App</title>
+    <link rel="stylesheet" href="rgb-app.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script src="rgb-app.js"></script>
+    <!-- Write your html code from here-->
+
+    <div class="rgb-app">
+      <div id="display_vertical_component" class="vertical_component">
+        <div class="vertical_component_header">
+          <p id="displayred" onclick="red()">Red</p>
+          <p id="displayblue" onclick="blue()">Blue</p>
+          <p id="displaygreen" onclick="green()">Green</p>
+        </div>
+        <div class="vertical_component_footer">
+          <i onclick="Vertical_left_Arrow()" style='font-size:24px; color:lightgrey;margin:2px;' class='fas'>&#xf0a8;</i>
+          <i onclick="Vertical_right_Arrow()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0a9;</i>
+          <i onclick="Vertical_Up_ArrowIncrement()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
+          <!--uparrow-->
+          <i onclick="Vertical_Down_ArrowDecrement()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
+          <!--downarrow-->
+        </div>
+      </div>
+      <div id="horizontal_components" class="horizontal_components">
+        <div id="display_horizontal_component_child1" class="horizontal_component_child1" style="background-color:#990000">
+          <div class="hr_comp_header">
+            <p id="displayred1" onclick="hor_red1()">Red</p>
+            <p id="displayblue1" onclick="hor_blue1()">Blue</p>
+            <p id="displaygreen1" onclick="hor_green1()">Green</p>
+          </div>
+          <div class="arrows">
+            <i onclick="rightSideBox1UpArrow()"style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
+            <!--uparrow-->
+            <i onclick="rightside_box1Downarrow()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
+            <!--downarrow-->
+          </div>
+        </div>
+
+        <div id="display_horizontal_component_child2" class="horizontal_component_child2" style="background-color:#0059b3">
+          <div class="hr_comp_header">
+            <p id="displayred2" onclick="hor_red2()">Red</p>
+            <p id="displayblue2" onclick="hor_blue2()">Blue</p>
+            <p id="displaygreen2" onclick="hor_green2()">Green</p>
+          </div>
+          <div class="arrows">
+            <i onclick="rightside_box2Uparrow()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
+            <!--uparrow-->
+            <i onclick="rightside_box2Downarrow()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
+            <!--downarrow-->
+          </div>
+        </div>
+
+        <div id="display_horizontal_component_child3" class="horizontal_component_child3" style="background-color:#009900;">
+          <div class="hr_comp_header">
+            <p id="displayred3" onclick="hor_red3()">Red</p>
+            <p id="displayblue3" onclick="hor_blue3()">Blue</p>
+            <p id="displaygreen3" onclick="hor_green3()">Green</p>
+          </div>
+          <div class="arrows">
+            <i onclick="rightside_box3Uparrow()" style='font-size:24px;color: lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
+            <!--uparrow-->
+            <i  onclick="rightSideBox3DownArrow()"style='font-size:24px;color: lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
+            <!--downarrow-->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+
+</html>

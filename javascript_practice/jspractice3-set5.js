@@ -1,3 +1,4 @@
+/*
 //#Question 1
 function greatest_number(number1, number2) {
     if (number1 >= number2)
@@ -269,14 +270,13 @@ function isEmptyObject(object) {
 }
 console.log(isEmptyObject({ name: 'devi', age: '22' }));
 //let obj_car = Object.create({});
-
+*/
 //#Question 23
 //NEED TO CHECK AGAIN
 function displayPropertyWithValue(person_obj) {
     for (let [key, value] of Object.entries(person_obj)) {
         console.log(`${key} ${value},`);
     }
-
 }
 displayPropertyWithValue({ Jhon: "software", Ann: "hardware" });
 
@@ -284,7 +284,7 @@ function getAllPropertyNames_keys(person_obj) {
     return Object.keys(person_obj);
 }
 console.log(getAllPropertyNames_keys({ Jhon: "software", Ann: "hardware" }));
-
+/*
 //#Question 24
 function getAllPropertyNames_values(person_obj) {
     //   return Object.values(person_obj);
@@ -399,3 +399,17 @@ myObject.addition = function addition(array) {
 };
 
 console.log(myObject.addition([4556, -443, 544, 3453]));
+*/
+
+//let selectedColor = null;
+//alert(typeof(selectedColor));
+
+// const interest;
+// try {interest = 5;
+// console.log(interest);
+// }
+// catch (e) {
+//     console.log("error");
+// }
+// alert(null == undefined);
+// alert(null === undefined);
