@@ -17,61 +17,58 @@
     <!-- Write your html code from here-->
 
     <div class="rgb-app">
-      <div id="display_vertical_component" class="vertical_component">
+
+      <div id="VerticalComponent" class="vertical_component">
+
         <div class="vertical_component_header">
-          <p id="displayred" onclick="red()">Red</p>
-          <p id="displayblue" onclick="blue()">Blue</p>
-          <p id="displaygreen" onclick="green()">Green</p>
+          <p id="VerticalBoxChangeThemeRed" onclick="VerticalBoxChangeThemeRed()">Red</p>
+          <p id="VerticalBoxChangeThemeBlue" onclick="VerticalBoxChangeThemeBlue()">Blue</p>
+          <p id="VerticalBoxChangeThemeGreen" onclick="VerticalBoxChangeThemeGreen()">Green</p>
         </div>
         <div class="vertical_component_footer">
-          <i onclick="Vertical_left_Arrow()" style='font-size:24px; color:lightgrey;margin:2px;' class='fas'>&#xf0a8;</i>
-          <i onclick="Vertical_right_Arrow()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0a9;</i>
-          <i onclick="Vertical_Up_ArrowIncrement()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
-          <!--uparrow-->
-          <i onclick="Vertical_Down_ArrowDecrement()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
-          <!--downarrow-->
+          <i onclick="SwapVerticalBoxLeftToRight()" style='font-size:24px; color:lightgrey;margin:2px;' class='fas'>&#xf0a8;</i>
+          <i onclick="SwapVerticalBoxRightToLeft()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0a9;</i>
+          <i onclick="IncrementHeightOfVerticalComponent()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
+          <i onclick="DecrementHeightOfVerticalComponent()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
         </div>
+
       </div>
-      <div id="horizontal_components" class="horizontal_components">
-        <div id="display_horizontal_component_child1" class="horizontal_component_child1" style="background-color:#990000">
-          <div class="hr_comp_header">
-            <p id="displayred1" onclick="hor_red1()">Red</p>
-            <p id="displayblue1" onclick="hor_blue1()">Blue</p>
-            <p id="displaygreen1" onclick="hor_green1()">Green</p>
+
+      <div id="HorizontalComponents" class="horizontal_components">
+
+        <div id="DisplayHorizontalComponent1" class="horizontal_component_child1" style="background-color:#990000">
+          <div class="horizontal_component_header">
+            <p id="Horizontaldiv1ChangeThemeRed" onclick="Horizontaldiv1ChangeThemeRed()">Red</p>
+            <p id="Horizontaldiv1ChangeThemeBlue" onclick="Horizontaldiv1ChangeThemeBlue()">Blue</p>
+            <p id="Horizontaldiv1ChangeThemeGreen" onclick="Horizontaldiv1ChangeThemeGreen()">Green</p>
           </div>
           <div class="arrows">
-            <i onclick="rightSideBox1UpArrow()"style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
-            <!--uparrow-->
-            <i onclick="rightside_box1Downarrow()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
-            <!--downarrow-->
+            <i onclick="SwapBox1ToBox3()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
+            <i onclick="SwapBox1ToBox2()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
           </div>
         </div>
 
-        <div id="display_horizontal_component_child2" class="horizontal_component_child2" style="background-color:#0059b3">
-          <div class="hr_comp_header">
-            <p id="displayred2" onclick="hor_red2()">Red</p>
-            <p id="displayblue2" onclick="hor_blue2()">Blue</p>
-            <p id="displaygreen2" onclick="hor_green2()">Green</p>
+        <div id="DisplayHorizontalComponent2" class="horizontal_component_child2" style="background-color:#0059b3">
+          <div class="horizontal_component_header">
+            <p id="Horizontaldiv2ChangeThemeRed" onclick="Horizontaldiv2ChangeThemeRed()">Red</p>
+            <p id="Horizontaldiv2ChangeThemeBlue" onclick="Horizontaldiv2ChangeThemeBlue()">Blue</p>
+            <p id="Horizontaldiv2ChangeThemeGreen" onclick="Horizontaldiv2ChangeThemeGreen()">Green</p>
           </div>
           <div class="arrows">
-            <i onclick="rightside_box2Uparrow()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
-            <!--uparrow-->
-            <i onclick="rightside_box2Downarrow()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
-            <!--downarrow-->
+            <i onclick="SwapBox2ToBox1()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
+            <i onclick="SwapBox2ToBox3()" style='font-size:24px;color:lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
           </div>
         </div>
 
-        <div id="display_horizontal_component_child3" class="horizontal_component_child3" style="background-color:#009900;">
-          <div class="hr_comp_header">
-            <p id="displayred3" onclick="hor_red3()">Red</p>
-            <p id="displayblue3" onclick="hor_blue3()">Blue</p>
-            <p id="displaygreen3" onclick="hor_green3()">Green</p>
+        <div id="DisplayHorizontalComponent3" class="horizontal_component_child3" style="background-color:#009900;">
+          <div class="horizontal_component_header">
+            <p id="Horizontaldiv3ChangeThemeRed" onclick="Horizontaldiv3ChangeThemeRed()">Red</p>
+            <p id="Horizontaldiv3ChangeThemeBlue" onclick="Horizontaldiv3ChangeThemeBlue()">Blue</p>
+            <p id="Horizontaldiv3ChangeThemeGreen" onclick="Horizontaldiv3ChangeThemeGreen()">Green</p>
           </div>
           <div class="arrows">
-            <i onclick="rightside_box3Uparrow()" style='font-size:24px;color: lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
-            <!--uparrow-->
-            <i  onclick="rightSideBox3DownArrow()"style='font-size:24px;color: lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
-            <!--downarrow-->
+            <i onclick="SwapBox3ToBox2()" style='font-size:24px;color: lightgrey;margin:2px;' class='fas'>&#xf0aa;</i>
+            <i onclick="SwapBox3ToBox1()" style='font-size:24px;color: lightgrey;margin:2px;' class='fas'>&#xf0ab;</i>
           </div>
         </div>
 

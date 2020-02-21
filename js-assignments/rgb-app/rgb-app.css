@@ -17,7 +17,7 @@
 
 .vertical_component_header,
 .vertical_component_footer,
-.hr_comp_header {
+.horizontal_component_header {
     display: flex;
     justify-content: center;
 }
@@ -35,7 +35,10 @@ p:hover {
     background-color: white;
     border: 1px solid blue;
     opacity: 0.5;
+}
 
+i {
+    opacity: 0.5;
 }
 
 .arrows {
@@ -44,26 +47,10 @@ p:hover {
     justify-content: center;
     align-items: flex-end;
     text-align: center;
-
 }
 
-.horizontal_component_child1 {
-    margin: 15px;
-    /*height: 200px;*/
-    /*background-color: #990000;*/
-    /*order: 1;*/
-}
-
-.horizontal_component_child2 {
-    /*background-color: #0059b3;*/
-    /*height: 200px;*/
-    margin: 15px;
-    /*order: 2;*/
-}
-
+.horizontal_component_child1,
+.horizontal_component_child2,
 .horizontal_component_child3 {
     margin: 15px;
-    /*background-color: #009900;*/
-    /*height: 200px;*/
-    /*order: 3;*/
 }
