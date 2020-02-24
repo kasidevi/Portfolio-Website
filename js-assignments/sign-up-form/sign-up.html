@@ -1,20 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="sign-up.css" />
   </head>
 
-  <body>
+  <body id="body" style="background: linear-gradient(to left, #660066 0%, #00ccff 100%);">
     <div id="console-root"></div>
     <script src="https://tap.ibhubs.in/utils/console.js"></script>
     <script src="sign-up.js"></script>
     <!-- Write your html code from here-->
+    <div class="color_buttons">
+      <p class="margin">select your favourite color</p>
+      <!--<p onclick="displayBlueColorToInputText" class="blue_color_box"></p>-->
+      <!--<p onclick="displayBlueColorToInputText" class="purple_color_box"></p>-->
+      <p class="margin"><input onclick="changeTheme1()" type="color" id="colorTheme1" name="head" value="#00ccff" /></p>
+      <p class="margin"><input onclick="changeTheme2()" type="color" id="colorTheme2" name="head" value="#660066" /></p>
+    </div>
+
+    <div class="signup_form">
+      <h2>Sign Up</h2>
+      <p class="signup_below_content">please fill this form to create an account!</p>
+      <div class="border"></div>
+      <form onsubmit="return validate();">
+
+        <div class="firstname_lastname">
+          <div style="display:flex;flex-direction:column;flex-grow:1">
+            <input onkeypress="validateFirstName()" class="first_name typing_item" id="firstName" type="text" placeholder="First Name" style="background-color: #f2f2f2;border:none" />
+            <p id="ifFirstNameInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
+          </div>
+          <div style="display:flex;flex-direction:column;flex-grow:1">
+            <input onkeypress="validateLastName()" class="last_name typing_item" id="lastName" type="text" placeholder="Last Name" style="background-color: #f2f2f2;border:none" />
+            <p id="ifLastNameInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
+          </div>
+        </div>
+
+        <div class="mobile_number_to_confirm_password">
+          <input onkeypress="validateMobileNumber()" class="mobile_number typing_item" id="mobileNumber" type="text" placeholder="Mobile Number" style="background-color: #f2f2f2;border:none" />
+          <p id="ifMobileNumberInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
+          <input onblur="validateEmail()" class="email typing_item" id="email" type="text" placeholder="Email" style="background-color: #f2f2f2;border:none" />
+          <p id="ifEmailInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
+          <input onblur="validatePassword()" class="password typing_item" id="password" type="password" placeholder="Password" style="background-color: #f2f2f2;border:none" />
+          <p id="ifPasswordInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
+          <input onblur="validateConfirmPassword()" class="confirm_password typing_item" id="confirmPassword" type="password" placeholder="Confirm Password" style="background-color: #f2f2f2;border:none" />
+          <p id="ifConfirmPasswordInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
+        </div>
+
+        <div class="gender_selection">
+          <p>select your gender</p>
+          <p><input id="genderMale" name="radio1" type="radio" />Male</p>
+          <p><input id="genderFemale" name="radio1" type="radio" />Female</p>
+          <p><input id="other" name="radio1" type="radio" />Other</p>
+        </div>
+
+        <div class="selectbranch_and_set_dob">
+          <p>Select your branch
+            <select class="branch_dropdown" id="branch">
+              <option value="CSE">CSE</option>
+              <option value="ECE">ECE</option>
+              <option value="IT">IT</option>
+              <option value="EEE">EEE</option>
+              <option value="MECH">MECH</option>
+            </select>
+          </p>
+          <p>DOB<input class="dob" id="dateOfBirth" type="text" placeholder="dd/mm/yyyy" /></p>
+        </div>
+        <p class="address">Enter your address <input class="address_box" id="address" type="text" placeholder="Type your address here!.." /></p>
+
+        <div class="progress_bar">
+          <p class="progress_title">Select your typing speed</p>
+          <input type="range" id="vol" name="vol" min="0" max="50" />
+        </div>
+
+        <p class="terms_conditions"><input type="checkbox" />I accept the <a class="terms_and_conditions" href="#">Terms of Use</a> & <a class="terms_and_conditions" href="#">Privacy Policy</a></p>
+        <p class="signup_button"><button type="submit">Sign Up</button></p>
+      </form>
+    </div>
+    <p class="footer_login">Already have an account? <a href="#">Login here</a></p>
   </body>
+
 </html>
