@@ -12,75 +12,96 @@
   <body id="body" style="background: linear-gradient(to left, #660066 0%, #00ccff 100%);">
     <div id="console-root"></div>
     <script src="https://tap.ibhubs.in/utils/console.js"></script>
-    <script src="sign-up.js"></script>
+
     <!-- Write your html code from here-->
-    <div class="color_buttons">
+    <div class="color-buttons">
       <p class="margin">select your favourite color</p>
-      <!--<p onclick="displayBlueColorToInputText" class="blue_color_box"></p>-->
-      <!--<p onclick="displayBlueColorToInputText" class="purple_color_box"></p>-->
-      <p class="margin"><input onclick="changeTheme1()" type="color" id="colorTheme1" name="head" value="#00ccff" /></p>
-      <p class="margin"><input onclick="changeTheme2()" type="color" id="colorTheme2" name="head" value="#660066" /></p>
+      <p class="margin"><input onchange="changeTheme()" type="color" id="colorTheme1" name="head" value="#00ccff" /></p>
+      <p class="margin"><input onchange="changeTheme()" type="color" id="colorTheme2" name="head" value="#660066" /></p>
     </div>
 
-    <div class="signup_form">
+    <div class="signup-form">
       <h2>Sign Up</h2>
-      <p class="signup_below_content">please fill this form to create an account!</p>
+      <p class="signup-below-content">please fill this form to create an account!</p>
       <div class="border"></div>
-      <form onsubmit="return validate();">
+      <form>
 
-        <div class="firstname_lastname">
+        <div class="firstname-lastname">
           <div style="display:flex;flex-direction:column;flex-grow:1">
-            <input onkeypress="validateFirstName()" class="first_name typing_item" id="firstName" type="text" placeholder="First Name" style="background-color: #f2f2f2;border:none" />
+            <p id="requriedFirstName" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+            <input onkeypress="validateFirstName()" class="first-name typing-item" id="firstName" type="text" placeholder="First Name" style="background-color: #f2f2f2;border:none" />
             <p id="ifFirstNameInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
           </div>
           <div style="display:flex;flex-direction:column;flex-grow:1">
-            <input onkeypress="validateLastName()" class="last_name typing_item" id="lastName" type="text" placeholder="Last Name" style="background-color: #f2f2f2;border:none" />
+            <p id="requriedLastName" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+            <input onkeypress="validateLastName()" class="last-name typing-item" id="lastName" type="text" placeholder="Last Name" style="background-color: #f2f2f2;border:none" />
             <p id="ifLastNameInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
           </div>
         </div>
 
-        <div class="mobile_number_to_confirm_password">
-          <input onkeypress="validateMobileNumber()" class="mobile_number typing_item" id="mobileNumber" type="text" placeholder="Mobile Number" style="background-color: #f2f2f2;border:none" />
+        <div class="mobile-number-to-confirm-password">
+          <p id="requriedMobileNumber" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+          <input onkeypress="validateMobileNumber()" class="mobile-number typing-item" id="mobileNumber" type="text" placeholder="Mobile Number" style="background-color: #f2f2f2;border:none" />
           <p id="ifMobileNumberInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
-          <input onblur="validateEmail()" class="email typing_item" id="email" type="text" placeholder="Email" style="background-color: #f2f2f2;border:none" />
+
+          <p id="requriedEmail" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+          <input onblur="validateEmail()" class="email typing-item" id="email" type="text" placeholder="Email" style="background-color: #f2f2f2;border:none" />
           <p id="ifEmailInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
-          <input onblur="validatePassword()" class="password typing_item" id="password" type="password" placeholder="Password" style="background-color: #f2f2f2;border:none" />
+
+          <p id="requriedPassword" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+          <input onblur="validatePassword()" class="password typing-item" id="password" type="password" placeholder="Password" style="background-color: #f2f2f2;border:none" />
           <p id="ifPasswordInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
-          <input onblur="validateConfirmPassword()" class="confirm_password typing_item" id="confirmPassword" type="password" placeholder="Confirm Password" style="background-color: #f2f2f2;border:none" />
+
+          <p id="requriedConfirmPassword" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+          <input onblur="validateConfirmPassword()" class="confirm-password typing-item" id="confirmPassword" type="password" placeholder="Confirm Password" style="background-color: #f2f2f2;border:none" />
           <p id="ifConfirmPasswordInvalid" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">Invalid</p>
         </div>
 
-        <div class="gender_selection">
-          <p>select your gender</p>
-          <p><input id="genderMale" name="radio1" type="radio" />Male</p>
-          <p><input id="genderFemale" name="radio1" type="radio" />Female</p>
-          <p><input id="other" name="radio1" type="radio" />Other</p>
+        <div>
+          <p id="requriedGender" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+          <div onclick="genderSelection()" class="gender-selection" id="gender">
+            <p>select your gender</p>
+            <p><input id="genderMale" name="radio1" type="radio" />Male</p>
+            <p><input id="genderFemale" name="radio1" type="radio" />Female</p>
+            <p><input id="other" name="radio1" type="radio" />Other</p>
+          </div>
         </div>
 
-        <div class="selectbranch_and_set_dob">
-          <p>Select your branch
-            <select class="branch_dropdown" id="branch">
+        <div class="selectbranch-and-set-dob">
+          <div>
+            <p id="branch" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+            <p>Select your branch
+              <select class="branch-dropdown" id="branchName">
               <option value="CSE">CSE</option>
               <option value="ECE">ECE</option>
               <option value="IT">IT</option>
               <option value="EEE">EEE</option>
               <option value="MECH">MECH</option>
             </select>
-          </p>
-          <p>DOB<input class="dob" id="dateOfBirth" type="text" placeholder="dd/mm/yyyy" /></p>
+            </p>
+          </div>
+          <div>
+            <p id="requriedDOB" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+            <p>DOB<input onblur="validateDOB()" class="dob" id="dateOfBirth" type="date" placeholder="dd/mm/yyyy" /></p>
+            <p id="ifDobInvalid" style="color:red; visibility:hidden;margin-left:5px;margin-top:0px;margin-bottom:0px">Invalid</p>
+          </div>
         </div>
-        <p class="address">Enter your address <input class="address_box" id="address" type="text" placeholder="Type your address here!.." /></p>
 
-        <div class="progress_bar">
-          <p class="progress_title">Select your typing speed</p>
-          <input type="range" id="vol" name="vol" min="0" max="50" />
+        <p class="address">Enter your address <textarea class="address-box" id="address" type="text" placeholder="Type your address here!.."></textarea></textarea>
+        </p>
+
+        <div class="progress-bar">
+          <p class="progress-title">Select your typing speed</p>
+          <input class="typing-speed" type="range" id="typingSpeed" name="vol" min="0" max="50" />
         </div>
 
-        <p class="terms_conditions"><input type="checkbox" />I accept the <a class="terms_and_conditions" href="#">Terms of Use</a> & <a class="terms_and_conditions" href="#">Privacy Policy</a></p>
-        <p class="signup_button"><button type="submit">Sign Up</button></p>
+        <p id="ifCheckboxNotSelected" style="color:red; visibility:hidden;margin-top:0px;margin-bottom:0px">*required</p>
+        <p class="terms-conditions"><input onclick="termsConditions()" id="checkBox" type="checkbox" />I accept the <a class="terms-and-conditions" href="#">Terms of Use</a> & <a class="terms-and-conditions" href="#">Privacy Policy</a></p>
+        <p class="signup-button"><button onclick="validate()" type="button">Sign Up</button></p>
       </form>
     </div>
-    <p class="footer_login">Already have an account? <a href="#">Login here</a></p>
+    <p class="footer-login">Already have an account? <a href="#">Login here</a></p>
+    <script src="sign-up.js"></script>
   </body>
 
 </html>

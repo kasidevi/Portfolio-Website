@@ -1,4 +1,4 @@
-.color_buttons {
+.color-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,14 +9,13 @@
     margin: 5px;
 }
 
-
-.signup_form {
+.signup-form {
     margin-left: 70px;
     margin-right: 70px;
     background-color: white;
 }
 
-.signup_below_content {
+.signup-below-content {
     color: grey;
     font-size: 15px;
     margin-left: 15px;
@@ -29,7 +28,7 @@
 }
 
 form {
-    margin: 20px;
+    margin: 10px;
 }
 
 h2 {
@@ -38,29 +37,32 @@ h2 {
     padding-left: 15px;
 }
 
-.firstname_lastname {
+.firstname-lastname {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.mobile_number_to_confirm_password {
+.mobile-number-to-confirm-password {
     display: flex;
     flex-direction: column;
 }
 
-.typing_item {
+.typing-item {
     padding: 7px;
     flex-grow: 1;
     margin: 5px;
     border-radius: 0px;
 }
 
-.gender_selection,
-.selectbranch_and_set_dob {
+.gender-selection,
+.selectbranch-and-set-dob {
     display: flex;
     justify-content: space-between;
     color: grey;
     margin: 5px;
     flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .dob {
@@ -68,7 +70,7 @@ h2 {
     border-radius: 0px;
 }
 
-.branch_dropdown {
+.branch-dropdown {
     padding: 5px;
 }
 
@@ -76,38 +78,39 @@ h2 {
     color: grey;
     display: flex;
     margin: 5px;
-    align-items: center
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.address_box {
+.address-box {
     padding: 15px;
     flex-grow: 1;
 }
 
-.progress_bar {
+.progress-bar {
     display: flex;
 }
 
-.progress_title {
+.progress-title {
     color: grey;
 }
 
-#vol {
+.typing-speed {
     flex-grow: 1;
 }
 
-.footer_login,
+.footer-login,
 a {
     text-align: center;
     color: white;
 }
 
-.terms_and_conditions {
+.terms-and-conditions {
     text-decoration: none;
     color: #00ace6;
 }
 
-.terms_conditions {
+.terms-conditions {
     color: grey;
 }
 
@@ -124,47 +127,8 @@ button {
     margin-bottom: 50px;
 }
 
-.signup_button {
+.signup-button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-/*body {
-    */
-
-/*background: linear-gradient(to left, #cc66ff 0%, #0077b3 100%);*/
-
-/*    background: linear-gradient(to left, #660066 0%, #00ccff 100%);*/
-
-/*}*/
-
-/*
-.blue_color_box,
-.purple_color_box {
-    border: 1px solid black;
-    padding-right: 20px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 20px;
-}
-
-.blue_color_box {
-    background-color: #0073e6;
-}
-
-.purple_color_box {
-    background-color: #aa00ff;
-}
-*/
-
-/*progress {
-    height: 20px;
-    background: #d4d7e6;
-    border-radius: 30px;
-    box-shadow: none;
-    margin-bottom: 30px;
-    overflow: visible;
-}*/

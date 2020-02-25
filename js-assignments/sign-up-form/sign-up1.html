@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up1.css" />
+  </head>
+
+  <body id='body'>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+    <!-- Write your html code from here-->
+    <div class="color-buttons">
+      <p class="margin">select your favourite color</p>
+      <p class="margin"><input type="color" id="colorTheme1" name="head" value="#00ccff" /></p>
+      <p class="margin"><input type="color" id="colorTheme2" name="head" value="#660066" /></p>
+    </div>
+
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <p class="signup-below-content">please fill this form to create an account!</p>
+      <div class="border"></div>
+
+      <div class="firstname-lastname">
+        <div>
+          <p class="error-msg" id="firstNameErrorMsg"></p>
+          <input class="first-name typing-fields" id="firstName" type="text" placeholder="First Name" />
+        </div>
+        <div>
+          <span></span>
+          <input class="last-name typing-fields" id="lastName" type="text" placeholder="Last Name" />
+        </div>
+      </div>
+
+      <div class="mobile-number-to-confirm-password">
+        <input class="mobile-number typing-fields" id="mobileNumber" type="text" placeholder="Mobile Number" />
+        <input class="email typing-fields" id="email" type="text" placeholder="Email" />
+        <input class="password typing-fields" id="password" type="password" placeholder="Password" />
+        <input class="confirm-password typing-fields" id="confirmPassword" type="password" placeholder="Confirm Password" />
+      </div>
+
+      <div>
+        <div class="gender-selection" id="gender">
+          <p>select your gender</p>
+          <p><input id="genderMale" name="radio1" type="radio" />Male</p>
+          <p><input id="genderFemale" name="radio1" type="radio" />Female</p>
+          <p><input id="other" name="radio1" type="radio" />Other</p>
+        </div>
+      </div>
+
+      <div class="selectbranch-and-set-dob">
+        <p>Select your branch
+          <select class="branch-dropdown" id="branchName">
+              <option value="CSE">CSE</option>
+              <option value="ECE">ECE</option>
+              <option value="IT">IT</option>
+              <option value="EEE">EEE</option>
+              <option value="MECH">MECH</option>
+            </select>
+        </p>
+        <p>DOB<input class="dob" id="dateOfBirth" type="date" placeholder="dd/mm/yyyy" /></p>
+      </div>
+
+      <p class="address">Enter your address <textarea class="address-box" id="address" type="text" placeholder="Type your address here!.."></textarea></textarea>
+      </p>
+
+      <div class="progress-bar">
+        <p class="progress-title">Select your typing speed</p>
+        <input class="typing-speed" type="range" id="typingSpeed" name="vol" min="0" max="50" />
+      </div>
+
+      <p class="terms-conditions"><input onclick="termsConditions()" id="checkBox" type="checkbox" />I accept the <a class="terms-and-conditions" href="#">Terms of Use</a> & <a class="terms-and-conditions" href="#">Privacy Policy</a></p>
+      <p class="signup-button"><button type="button">Sign Up</button></p>
+
+    </div>
+    <p class="footer-login">Already have an account? <a href="#">Login here</a></p>
+    <script src="sign-up1.js"></script>
+
+  </body>
+
+</html>

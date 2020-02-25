@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(to left, #660066 0%, #00ccff 100%);
+}
+
+.color-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.margin {
+    margin: 5px;
+}
+
+.signup-form {
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: white;
+}
+
+.signup-below-content {
+    color: grey;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 0px
+}
+
+.border {
+    border: 0.8px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 0px;
+    padding-top: 40px;
+    padding-left: 15px;
+}
+
+.firstname-lastname {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-number-to-confirm-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.typing-fields {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 7px;
+    flex-grow: 1;
+    margin: 5px;
+    border-radius: 0px;
+}
+
+.gender-selection,
+.selectbranch-and-set-dob {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    margin: 5px;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dob {
+    padding: 4px;
+    border-radius: 0px;
+}
+
+.branch-dropdown {
+    padding: 5px;
+}
+
+.address {
+    color: grey;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.address-box {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.progress-bar {
+    display: flex;
+}
+
+.progress-title,
+.terms-conditions {
+    color: grey;
+}
+
+.typing-speed {
+    flex-grow: 1;
+}
+
+.footer-login,
+a {
+    text-align: center;
+    color: white;
+}
+
+.terms-and-conditions {
+    text-decoration: none;
+    color: #00ace6;
+}
+
+button {
+    color: white;
+    background-color: #008ae6;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0px;
+    padding: 5px;
+    border: 0px;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-bottom: 50px;
+}
+
+.signup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-msg {
+    color: red;
+    margin-bottom: 0px;
+}
