@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="todo-list.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
     <div id="console-root"></div>
     <script src="https://tap.ibhubs.in/utils/console.js"></script>
-    <script src="todo-list.js"></script>
     <!-- Write your html code from here-->
+    <div class="todo-app">
+
+      <p class="todos">todos</p>
+      <div class="input-tag">
+        <span class="fa drop-down">&#xf107;</span>
+        <input class="type-your-todo" id="addingTodoFeild" type="text" placeholder="What needs to be done?" />
+      </div>
+      <ul id="listOfItems">
+      </ul>
+
+      <div class="footer" id="footer">
+        <p id="items"></p>
+        <p class="all" id="all">All</p>
+        <p id="active">Active</p>
+        <p id="completed">completed</p>
+        <p id="clearCompleted">clear completed</p>
+      </div>
+
+    </div>
+    <script src="todo-list.js"></script>
   </body>
+
 </html>

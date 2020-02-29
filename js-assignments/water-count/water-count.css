@@ -1,0 +1,42 @@
+.water-count {
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.big-water-glass {
+    width: 250px;
+    height: 400px;
+    border: 2px solid blue;
+    align-self: center;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.header-goal,
+.select-glasses {
+    color: white;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid blue;
+    list-style-type: none;
+    height: 70px;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    background-color: white;
+    color: blue;
+}
+
+.small-water-glasses {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}

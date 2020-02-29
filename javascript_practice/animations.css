@@ -1,0 +1,366 @@
+/*.div-hover {
+    padding: 30px;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
+
+.div-hover:hover {
+    width: 50%;
+}
+*/
+
+/*------------------------------------------------------*/
+
+/*.animation {
+    padding: 30px;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
+
+.active {
+    width: 300px;
+}
+*/
+
+/*------------------------------------------------------*/
+
+/*.animation {
+    padding: 30px;
+    background-color: yellowgreen;
+    width: 50px;
+    height: 50px;
+    transition-property: width;
+    transition-property: height;
+    transition-duration: 5s;
+    transition-delay: 2s;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
+}
+
+.active {
+    width: 50%;
+    height: 300px;
+}
+*/
+
+/*------------------------------------------------------*/
+
+/*
+.animation {
+    margin: 30px;
+    padding: 30px;
+    background-color: skyblue;
+    width: 50px;
+    height: 50px;
+    transition-property: all;
+    transition: width 2s linear 1s;
+    transition: transform 1s;
+}
+
+.active {
+    transform: scale(2);
+    transform: rotate(180deg);
+}*/
+
+/*------------------------------------------------------*/
+
+/*
+#backColor,
+#transition {
+    background-color: #00aa9d;
+    border-radius: 3px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    transition: transform 0.8s;
+}
+
+#transition {
+    background-color: black;
+}
+
+.active {
+    transform: translate(20px, 20px);
+    transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%);
+}*/
+
+/*------------------------------------------------------*/
+
+/*
+#transition {
+    background-color: skyblue;
+    border-radius: 5px 50%;
+    height: 100px;
+    width: 100px;
+    transform-origin: left top;
+    transition: transform 3s;
+    margin: 150px auto;
+}
+
+.active {
+    transform: rotate(500deg);
+}
+*/
+
+/*------------------------------------------------------*/
+
+/*
+.main {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+
+.hi-position {
+    position: absolute;
+}
+
+.red,
+.blue,
+.green,
+.yellow {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.9s;
+
+}
+
+.red {
+    transform-origin: left top;
+    background-color: red;
+}
+
+.blue {
+    transform-origin: left bottom;
+    background-color: blue;
+}
+
+.yellow {
+    transform-origin: right top;
+    background-color: yellow;
+}
+
+.green {
+    transform-origin: right bottom;
+    background-color: green;
+}
+
+.red:hover {
+    transform: rotate(90deg);
+}
+
+.blue:hover {
+    transform: rotate(-90deg);
+}
+
+.yellow:hover {
+    transform: rotate(-90deg);
+}
+
+.green:hover {
+    transform: rotate(90deg);
+}
+*/
+
+/*------------------------------------------------------*/
+
+/*
+div {
+    width: 100px;
+    height: 100px;
+    background-color: thistle;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+}
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+        background-color: thistle;
+        width: 100px;
+    }
+    50% {
+        top: 100px;
+        background-color: mistyrose;
+        width: 200px;
+    }
+    100% {
+        top: 200px;
+        background-color: coral;
+        width: 300px;
+    }
+}
+*/
+
+/*
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+@keyframes mymove{
+    from{
+        left:0;
+    }
+    to{
+        left:200px
+    }
+}
+*/
+
+/*______________________________________________*/
+
+/*
+div {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    0% {
+        background-color: thistle;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: mistyrose;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: coral;
+        left: 200px;
+        top: 200px;
+    }
+    100% {
+        background-color: thistle;
+        left: 0px;
+        top: 200px;
+    }
+}
+*/
+
+/*
+div {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    0% {
+        background-color: thistle;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: mistyrose;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: coral;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: coral;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: thistle;
+        left: 0px;
+        top: 0px;
+    }
+}
+*/
+
+/*
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+        background-color: yellowgreen;
+    }
+}
+*/
+
+div {
+    margin: 100px;
+    background-color: skyblue;
+    width: 150px;
+    height: 15px;
+    border-radius: 7px;
+    animation-name: mymove;
+    animation-iteration-count: 2;
+    transform-origin: 20% 40%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+}
+
+span {
+    animation-name: spantext;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+@keyframes spantext {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 100px;
+    }
+}
+
+@keyframes mymove {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(225deg);
+    }
+}

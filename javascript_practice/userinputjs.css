@@ -1,0 +1,14 @@
+.one {
+    background-color: blue;
+    padding: 50px;
+}
+
+.two {
+    padding: 50px;
+    background-color: red;
+}
+
+.three {
+    padding: 50px;
+    background-color: green;
+}
