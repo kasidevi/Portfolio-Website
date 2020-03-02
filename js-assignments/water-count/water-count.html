@@ -12,12 +12,15 @@
   <body>
     <div id="console-root"></div>
     <script src="https://tap.ibhubs.in/utils/console.js"></script>
-    <script src="water-count.js"></script>
+
     <!-- Write your html code from here-->
     <div class="water-count">
-      <p class="header-goal">Goal: 2literers</p>
-      <p class="big-water-glass">water</p>
-      <P class="select-glasses">Select how many water glasses you had</P>
+      <h2 class="header-goal">Goal: 2liters</h2>
+      <div class="big-water-glass" id="2LGlass">
+        <div class="remaining" id="remaining"></div>
+        <div class="filled-percentage" id="filledPercentage"></div>
+      </div>
+      <p class="select-glasses">Select how many water glasses you had</p>
       <ul class="small-water-glasses">
         <li>250<br>ml</li>
         <li>250<br>ml</li>
@@ -31,6 +34,7 @@
         <li>250<br>ml</li>
       </ul>
     </div>
+    <script src="water-count.js"></script>
   </body>
 
 </html>
