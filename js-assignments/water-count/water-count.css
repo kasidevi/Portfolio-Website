@@ -1,7 +1,12 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
 .water-count {
     display: flex;
     flex-direction: column;
-    background-color: skyblue;
+    background-color: #1aa3ff;
     text-align: center;
 }
 
@@ -15,7 +20,7 @@
     border: 3px solid blue;
     border-radius: 0px 0px 30px 30px;
     background-color: white;
-    color: skyblue;
+    color: #1aa3ff;
     position: relative;
 }
 
@@ -24,11 +29,9 @@
     justify-content: center;
     align-items: center;
     width: 250px;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 27px 27px;
     bottom: 0px;
     color: blue;
-    /*margin-bottom: 0px;*/
-    /*margin-top: 0px;*/
     font-size: 30px;
     transition-duration: 1s;
     position: absolute;
@@ -74,4 +77,13 @@ li {
 
 .select-glasses {
     font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.button {
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    color: blue;
+    border-radius: 10px;
 }

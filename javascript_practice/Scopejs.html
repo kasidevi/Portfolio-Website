@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS Basics</title>
+
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
+        <h1>Scope</h1>
+        <h1>Objects Practice</h1>
+        <script>
+            //objects
+            function showAddress() {
+                return {
+                    street: 'main road',
+                    city: 'bvrm',
+                    zipcode: '534199',
+                };
+
+            }
+            console.log(showAddress());
+
+
+            // function newPerson(gender, age) {
+            //     let person = {
+            //         gender: gender,
+            //         age: 20,
+            //         name: "devi",
+            //         createPerson: function createPerson() {
+            //             console.log('person');
+            //         }
+            //     };
+            //     return person;
+            // }
+            // let person = newPerson("female", 21);
+            // console.log(person);
+            // console.log(person.constructor);
+
+            //    using this(new) operator
+            function createPerson1(name, age, gender) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+            }
+
+            let person1 = new createPerson1('sri', 21, 'female');
+            console.log(person1.constructor);
+
+            // let circle={
+            //     radius:1,
+            //     center:{
+            //         x:1,
+            //         y:1,
+            //     },
+            //     draw:function () {
+            //     console.log('draw');
+            //     }
+            // };
+            // circle.draw();
+
+            //scope
+            // let person = {
+            //     name: 'jack',
+            //     place: 'houston',
+            //     hobbies: ['tennis', 'cricket']
+            // };
+            // console.log(person);
+            // let secondPerson = Object.assign({}, person);
+            // console.log(secondPerson);
+            // person.hobbies.push('coding');
+            // console.log(person);
+            // console.log(secondPerson);
+
+            // let name = ['jack', 'john'];
+
+            // function printNames() {
+            //     for (const i = 0; i < name.length; i++) {
+            //         console.log(name[i]);
+            //     }
+            // }
+            //   printNames();
+
+
+            // let hobbies = ['coding', 'cooking', 'tennis', 'cricket'];
+            // alert(hobbies);
+            // hobbies.slice(0, 2);
+            //alert(hobbies);
+
+            // let reaction = "yikes";
+            // reaction[0] = 'l';
+            // console.log(reaction[0]);
+            // console.log(reaction);
+
+            //not completed
+            //                     let person = {
+            //                 name: 'jack',
+            //                 place: 'houston'
+            //             };
+            // console.log(person);
+            // let secondPerson=Object.assign({},person);
+            // console.log(secondPerson);
+            // person.place='santa clara';
+            // console.log()
+
+            // let person = {
+            //     name: 'jack',
+            //     place: 'houston'
+            // };
+
+            // function createPerson(person) {
+            //     let secondPerson = {};
+            //     for (let key in person) {
+            //         secondPerson[key] = person[key];
+            //     }
+            //     secondPerson.place = 'Santa Clara';
+            //     return secondPerson;
+            // }
+            // let secondPerson = createPerson(person);
+            // console.log(secondPerson);
+            // console.log(person);
+
+            // let person = {
+            //     name: 'jack',
+            //     place: 'houston'
+            // };
+
+            // function changePerson(person) {
+            //     person.place = 'santa Clara';
+            // }
+            // changePerson(person);
+            // console.log(person);
+
+            //let hobbies = ['coding', 'cooking', 'tennis', 'cricket'];
+            // let myHobbies = hobbies;
+            // hobbies.push('dancing');
+            // console.log(hobbies);
+            // console.log(myHobbies);
+        </script>
+    </body>
+
+</html>
