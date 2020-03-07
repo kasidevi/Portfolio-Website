@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS Basics</title>
+
+    </head>
+
+    <body>
+        <fields>
+            <input id='inputkey' type="text" placeholder="enter key" />
+            <input id='inputkey1' type="text" placeholder="enter value" />
+            <button id='button' type='button'>insertvalue</button>
+        </fields>
+        <div id="console-root"></div>
+        <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
+        <script>
+            //  window.localStorage.setItem('mycat', 'tom');
+            //   console.log(window.localStorage.getItem('mycat'));
+            // console.log(window.localStorage.mycat);
+            const inputkey = document.getElementById('inputkey');
+            const inputvalue = document.getElementById('inputkey1');
+            const button = document.getElementById('button');
+
+
+            const value = window.localStorage.getItem(key);
+
+
+
+            button.onclick = () => {
+                const key = inputkey.value;
+                const key1 = inputvalue.value;
+                //  console.log(key, key1);
+                if (key && key1) {
+                    window.localStorage.setItem("lav", key);
+
+                    console.log(window.location.onload());
+                }
+            };
+            //   for(let i=0;i<localStorage.length;i++){
+            //       const key= localStorage.key(i);
+            //     const value=localStorage.getItem(key);
+
+            //}
+        </script>
+    </body>
+
+</html>

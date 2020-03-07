@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+}
+
+.balance-history,
+.deposit-withdraw,
+.footer-submit {
+    display: flex;
+    align-items: center;
+}
+
+.btn-outline-primary {
+    padding: 10px;
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid #008080;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin: 5px;
+    color: #0080ff;
+    width: 50%;
+}
+
+.submit-button {
+    background-color: #1a8cff;
+    border: 1px solid #1a8cff;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.footer-submit {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.submit-button,
+.input-tag {
+    padding: 10px;
+    margin: 5px;
+    display: none;
+}
+
+.current-balance,
+.no-transactions {
+    display: none;
+}
+
+.input-tag {
+    border: 1px solid blue;
+    width: 47%;
+}
+
+.insufficient-balance {
+    margin-top: 0px;
+    margin-left: 5px;
+    color: red;
+    display: none;
+}
+
+table,
+td,
+tr,
+th {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}

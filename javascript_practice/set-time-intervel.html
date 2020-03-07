@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Birthday Wishes</title>
+        <style>
+            #setTimeIntervel {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;
+                font-size: 100px;
+                background-color: black;
+                color: white;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <div id='setTimeIntervel'></div>
+    <script>
+        let array = ['😎', '🎂', '❤️', '😁', '😍', '👩‍❤️‍👩', '🥰', '😘', '❤️', '🤩', '🥳', '😎'];
+        const time = document.getElementById('setTimeIntervel');
+        time.style.textAlign = 'center';
+        let clear = setInterval(() => {
+            array.forEach((id, index) => {
+                // alert(id);
+                time.innerHTML = id;
+                if (index + 1 === array.length) {
+                    time.innerHTML = 'hi';
+                    clearTimeout(clear);
+                }
+            });
+        }, 3000);
+    </script>
+
+    <body>
+    </body>
+
+</html>

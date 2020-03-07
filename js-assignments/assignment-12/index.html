@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ATM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <!-- Write your html code from here-->
+    <div class='deposit-withdraw'>
+      <button id='depositButton' type="button" class="btn btn-outline-primary">Deposit</button>
+      <button id='withdrawButton' type="button" class="btn btn-outline-primary">Withdraw</button>
+    </div>
+    <div class='balance-history'>
+      <button id='balanceButton' type="button" class="btn btn-outline-primary">Show Balance</button>
+      <button id='historyButton' type="button" class="btn btn-outline-primary">History</button>
+    </div>
+    <div class='footer-submit'>
+      <input class='input-tag' id='inputTagEnterAmountDeposit' type='text' placeholder='Deposit amount' />
+      <input class='input-tag' id='inputTagEnterAmountWithdraw' type='text' placeholder='withdraw amount' />
+      <button class='submit-button' id='submitButton1' type='submit'>Submit</button>
+      <button class='submit-button' id='submitButton2' type='submit'>Submit</button>
+      <p class='current-balance' id='currentBalance'></p>
+    </div>
+    <p class='insufficient-balance' id='insufficientBalance'>Insufficient balance</p>
+
+    <table id='table' style="width:100%">
+      <tr>
+        <th>Type of transaction</th>
+        <th>Amount in Rs</th>
+        <th>Balance in Rs</th>
+      </tr>
+    </table>
+    <p class='no-transactions' id='noTransactions'>No transactions</p>
+    <script src="index.js"></script>
+  </body>
+
+</html>

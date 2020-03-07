@@ -10,21 +10,25 @@
     </head>
 
     <body>
+
         <div id="console-root"></div>
         <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
         <h1>Scope</h1>
         <h1>Objects Practice</h1>
+        <div style='padding:50px;background-color:black;color:white;font-size:40px;width:30%;' class='set-time-interval' id="setTimeInterval"></div>
+        <button style='background-color:blue;' id='ui-button'>button</button>
+        <button id='clear-button'>clearTime</button>
         <script>
             //objects
-            function showAddress() {
-                return {
-                    street: 'main road',
-                    city: 'bvrm',
-                    zipcode: '534199',
-                };
+            // function showAddress() {
+            //     return {
+            //         street: 'main road',
+            //         city: 'bvrm',
+            //         zipcode: '534199',
+            //     };
 
-            }
-            console.log(showAddress());
+            // }
+            // console.log(showAddress());
 
 
             // function newPerson(gender, age) {
@@ -43,14 +47,14 @@
             // console.log(person.constructor);
 
             //    using this(new) operator
-            function createPerson1(name, age, gender) {
-                this.name = name;
-                this.age = age;
-                this.gender = gender;
-            }
+            // function createPerson1(name, age, gender) {
+            //     this.name = name;
+            //     this.age = age;
+            //     this.gender = gender;
+            // }
 
-            let person1 = new createPerson1('sri', 21, 'female');
-            console.log(person1.constructor);
+            // let person1 = new createPerson1('sri', 21, 'female');
+            // console.log(person1.constructor);
 
             // let circle={
             //     radius:1,
@@ -141,6 +145,332 @@
             // hobbies.push('dancing');
             // console.log(hobbies);
             // console.log(myHobbies);
+
+            //4/03/20.
+
+            // const car = {
+            //     brand: 'hyundai',
+            //     noOfTyres: 4,
+            //     start: function() {
+            //         //    alert(this);
+            //         console.log('started', this);
+            //     }
+            // };
+            // car.start();
+            // car.stop = function() {
+            //     console.log('stopped', this);
+            // };
+            // car.stop();
+            //car.createCar = function() {
+            //     console.log('stopped', this);
+            // };
+            // car.createCar();
+
+            // function createCar() {
+            //     console.log('createCar', this);
+            // };
+            // window.createCar();
+            // createCar();
+
+            //             const car = {
+            //                 brand: 'hyundai',
+            //                 noOfTyres: 4,
+            //                 start: function() {
+            //                     //    alert(this);
+            //                     console.log('started', this);
+            //                 },
+            //                 tyres: ['a', 'b', 'c', 'd'],
+            //                 showTyresList: function() {
+            //                     // const self = this;
+            //                     //  const that = this;
+            //                     this.tyres.forEach(function(eachTyre) {
+            //                         // console.log(`${eachTyre}:${car.brand}`);
+            //                         //  console.log(`${eachTyre}:${that.brand}`);
+            //                         // console.log(`${eachTyre}:${this.brand}`);
+            //                         //console.log(`${eachTyre}:${this.brand}`);
+            // console.log(`${eachTyre}:${this}`);
+
+            //                     });
+            // const logTyreWithCustomBrand=logTyreWithBrand.brand;
+
+            //                 }
+            //             };
+            //             car.showTyresList();
+
+            /*function withh different types of functioncalls*/
+            // function sampleFn(param1) {
+            //     console.log(this);
+            // }
+            // //   sampleFn(1);   //sampleFn.call({ brand: 'audi' }, 1);
+            // //   sampleFn.apply({ brand: 'suzuki' }, 2);
+            // let binding = sampleFn.bind({ brand: 'maruthy' }, 3);
+            // binding();
+            // // sampleFn();
+
+            //     function data(a, b) {
+            //         console.log(this.name, a, b);
+            //     }
+            //     let details = {
+            //         name: 'tom'
+            //     };
+            //     data.call(details, 2, 3);
+            //   //  data.bind(details);
+            //     data.apply(details, [1, 2]);
+
+            // const car = {
+            //     brand: 'hyundai',
+            //     noOfTyres: 4,
+            //     start: function() {
+            //         //    alert(this);
+            //         console.log('started', this.noOfTyres);
+            //     },
+            //     tyres: ['a', 'b', 'c', 'd'],
+            //     showTyresList: function() {
+            //         //  this...obj       
+            //         const tyres = function(eachTyre) {
+            //             console.log(`${eachTyre}:${this.brand}`);
+            //         };
+            //         const tyresWithBrand = tyres.bind({ brand: 'hyundai' });
+            //         this.tyres.forEach(tyresWithBrand);
+            //     }
+
+            // };
+            // car.start();
+            // car.showTyresList();
+
+            // const car = {
+            //     brand: 'hyundai',
+            //     noOfTyres: 4,
+            //     start: function() {
+            //         //    alert(this);
+            //         console.log('started', this.noOfTyres);
+            //     },
+            //     tyres: ['a', 'b', 'c', 'd'],
+            //     showTyresList: function() {
+            //         const tyres = (eachTyre) => {
+            //             console.log(`${eachTyre}:${this.brand}`);
+            //         };
+            //         //const tyresWithBrand = tyres.bind({ brand: 'hyundai' });
+            //         //this.tyres.forEach(tyresWithBrand);
+            //         this.tyres.forEach(tyres);
+            //     }
+
+            // };
+            // car.start();
+            // car.showTyresList();
+
+            // function Person() {
+            //     this.firstName = "ram";
+            //     this.lastName = 'Gupta';
+            //     this.fullName = function() {
+            //         return this.firstName + this.lastName;
+            //     };
+            // }
+            // const personTwo = new Person();
+            // console.log(personTwo);
+            // console.log(personTwo.fullName());
+
+            // function Person() {
+            //     this.gender = 'female';
+            //     return {
+            //         firstName: 'ram',
+            //         lastName: 'Gupta',
+            //         fullName: function() {
+            //             return this.firstName + this.lastName;
+            //         }
+            //     };
+            // }      // const personTwo = new Person();
+            //console.log(personTwo);
+            //console.log(personTwo.fullName()); 
+            // console.log(personTwo.gender);
+
+            // function ClassRoom(roomNumber, studentStrength) {
+            //     this.roomNumber = roomNumber;
+            //     this.studentStrength = studentStrength;
+            //     this.sessionStatus = 'Teaching'; //practice,exam,break,teaching
+            //     this.fansStatus = 'ON'; //ON,OFF
+            //     this.areFansRunning = true;
+            //     this.areACsRunning = false;
+            //     this.isSoundSystemOn = false;
+            //     this.switchOnPowerEquipment = function() {
+            //         this.areACsRunning = true;
+            //         this.fansStatus = 'OFF'; //ON,OFF
+            //         this.isSoundSystemOn = true;
+            //     };
+            //     this.switchOffPowerEquipment = function() {
+            //         this.areACsRunning = false;
+            //         this.fansStatus = 'OFF'; //ON,OFF
+            //         this.isSoundSystemOn = false;
+            //     };
+            //     this.startTeachingSession = function() {
+            //         this.switchOnPowerEquipment();
+            //         this.sessionStatus = "TEACHING";
+            //     };
+
+            //     this.stopTeachingSession = function() {
+            //         this.switchOffPowerEquipment();
+            //         this.sessionStatus = "OFF";
+            //     };
+            // }
+            // const classRoom1 = new ClassRoom(1, 65);
+            // console.log(classRoom1);
+            // const classRoom2 = new ClassRoom(2, 78);
+            //difference b/w above and below code difference is only way of writing(syntax) but functionality is same.
+            // class ClassRoomES6 {
+            //     constructor(roomNumber, studentStrength) {
+            //         this.roomNumber = roomNumber;
+            //         this.studentStrength = studentStrength;
+            //         this.areACsRunning = false;
+            //         this.fansStatus = 'OFF';
+            //         this.isSoundSystemOn = false;
+            //     }
+            //     switchOnPowerEquipment() {
+            //         this.areACsRunning = true;
+            //         this.fansStatus = 'ON';
+            //         this.isSoundSystemOn = true;
+            //         return this;
+            //     }
+            // }
+            // const es6ClassRoom = new ClassRoomES6(3, 57);
+            // console.log(es6ClassRoom);
+            // console.log(es6ClassRoom.switchOnPowerEquipment);
+            //  console.log(ClassRoomES6);
+
+            //05/03/20 
+            // class ClassRoomES6 {
+            //     constructor(roomNumber, studentStrength) {
+            //         this.roomNumber = roomNumber;
+            //         this.studentStrength = studentStrength;
+            //         this.areACsRunning = false;
+            //         this.fansStatus = 'OFF';
+            //         this.isSoundSystemOn = false;
+            //     }
+            //     switchOnPowerEquipment() {
+            //         this.areACsRunning = true;
+            //         this.fansStatus = 'ON';
+            //         this.isSoundSystemOn = true;
+            //         return this;
+            //     }
+            //     static sayHello() {
+            //         console.log("say Hello Static");
+            //     };
+            // }
+            // const es6ClassRoom = new ClassRoomES6(3, 57);
+            // //  console.log(ClassRoomES6);
+            // // console.log(ClassRoomES6.switchOnPowerEquipment);
+            // console.log(es6ClassRoom.sayHello); //instance
+            // console.log(ClassRoomES6.sayHello); //class
+
+            //extends concept here before use this must be use super() 
+            // class Room {
+            //     constructor() {
+            //         this.fansStatus = 'OFF';
+            //     }
+            // }
+            // class ClassRoom extends Room {
+            //     constructor() {
+            //         super();
+            //         this.noOfBenches = 23;
+            //     }
+            //     switchOnFans() {
+            //         this.fansStatus = 'ON';
+            //         return this;
+            //     }
+            // }
+            // const ClassRoomInstance = new ClassRoom();
+            // console.log(ClassRoomInstance.switchOnFans());
+
+            // class Account {
+            //     constructor(name, accountNumber, ifscCode) {
+            //         this.name = name;
+            //         this.brachName = 'VishnuPur';
+            //         this.accountNumber = accountNumber;
+            //         this.ifscCode = ifscCode;
+            //     }
+            // }
+            // class SavingsAccount extends Account {
+            //     constructor(name, accountNumber, ifscCode) {
+            //         super(name, accountNumber, ifscCode);
+            //         this.balance = 1000;
+            //         this.interestRate = 100;
+            //     }
+            // }
+            // class CurrentAccount extends SavingsAccount {
+            //     constructor(name, accountNumber, ifscCode) {
+            //         super();
+            //         this.overDraftAmount = 500;
+            //     }
+            // }
+            // class LoanAccount extends Account {
+            //     constructor(loanAmount, loanDurationInMonths) {
+            //         super();
+            //         this.loanAmount = loanAmount;
+            //         this.loanDurationInMonths = loanDurationInMonths;
+            //     }
+            // }
+
+            // const AccountInstance = new Account('Devisri', 12345678901, '12324355678dd');
+            // console.log(AccountInstance);
+
+            // //  console.log(SavingsAccount);
+            // const SavingsAccountInstance = new SavingsAccount('Devisri', 12345678901, '12324355678dd');
+            // console.log(SavingsAccountInstance);
+
+            // const CurrentAccountInstance = new CurrentAccount();
+            // console.log(CurrentAccountInstance);
+
+            // const LoanAccountInstance = new LoanAccount(10000, 12);
+            // console.log(LoanAccountInstance);
+
+            ////////////
+
+            // const uiButton = document.getElementById('ui-button');
+
+            // uiButton.onclick = function() {
+            //     uiButton.style.backgroundColor = 'red';
+
+            //     let clearTime = setTimeout(() => {
+            //         uiButton.style.backgroundColor = 'blue';
+            //     }, 5000);
+            //     uiButton.onclick = () => {
+            //         alert(clearTime);
+            //         clearTimeout(clearTime);
+            //     };
+            // };
+
+            const uiButton = document.getElementById('ui-button');
+            const clearTime = document.getElementById('clear-button');
+            let array = [];
+            // uiButton.onclick = () => {
+            //     uiButton.style.backgroundColor = 'red';
+            //     let latestclearTime = setTimeout(() => {
+            //         uiButton.style.backgroundColor = 'blue';
+            //     }, 5000);
+            //     //  console.log(latestclearTime);
+            //     array.push(latestclearTime);
+
+            //     clearTime.onclick = () => {
+            //         console.log(array);
+            //         array.forEach((id) => {
+            //             clearTimeout(id);
+            //         });
+            //         array = []
+            //     };  // };
+            let number = 10;
+            const time = document.getElementById('setTimeInterval');
+            time.style.textAlign = 'center';
+            let clear = setInterval(() => {
+                console.log(number);
+                time.innerHTML = number;
+                number -= 1;
+                if (number === -1) {
+                    // alert('HAPPY BIRTHDAY');
+                    //console.log('HAPPY BIRTHDAY');
+                    clearInterval(clear);
+                    time.innerHTML = 'HAPPY BIRTHDAY';
+                    // number = 10;
+                }
+            }, 3000);
         </script>
     </body>
 
