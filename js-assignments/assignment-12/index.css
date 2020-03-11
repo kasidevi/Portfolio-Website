@@ -64,4 +64,5 @@ tr,
 th {
     border: 1px solid blue;
     border-collapse: collapse;
+    text-align: center;
 }

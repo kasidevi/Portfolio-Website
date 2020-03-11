@@ -15,6 +15,7 @@
         <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
         <h1>Scope</h1>
         <h1>Objects Practice</h1>
+
         <div style='padding:50px;background-color:black;color:white;font-size:40px;width:30%;' class='set-time-interval' id="setTimeInterval"></div>
         <button style='background-color:blue;' id='ui-button'>button</button>
         <button id='clear-button'>clearTime</button>
@@ -456,21 +457,47 @@
             //         });
             //         array = []
             //     };  // };
-            let number = 10;
-            const time = document.getElementById('setTimeInterval');
-            time.style.textAlign = 'center';
-            let clear = setInterval(() => {
-                console.log(number);
-                time.innerHTML = number;
-                number -= 1;
-                if (number === -1) {
-                    // alert('HAPPY BIRTHDAY');
-                    //console.log('HAPPY BIRTHDAY');
-                    clearInterval(clear);
-                    time.innerHTML = 'HAPPY BIRTHDAY';
-                    // number = 10;
-                }
-            }, 3000);
+            // let number = 10;
+            // const time = document.getElementById('setTimeInterval');
+            // time.style.textAlign = 'center';
+            // let clear = setInterval(() => {
+            //     console.log(number);
+            //     time.innerHTML = number;
+            //     number -= 1;
+            //     if (number === -1) {
+            //         // alert('HAPPY BIRTHDAY');
+            //         //console.log('HAPPY BIRTHDAY');
+            //         clearInterval(clear);
+            //         time.innerHTML = 'HAPPY BIRTHDAY';
+            //         // number = 10;
+            //     }
+            // }, 3000);
+
+            // let country = 'Canada';
+            // let firstName = 'John';
+            // let lastName = 'Doe';
+
+            // const student = {
+            //     firstName: 'Glad',
+            //     lastName: 'Chinda',
+            //     country: 'Nigeria'
+            // };
+
+            // ({ firstName, lastName } = student);
+
+            // console.log(firstName, lastName, country);
+            // let hero = {
+            //     name: "John Doe",
+            //     getSecretIdentity: function() {
+            //         return this.name;
+            //         //    alert('hi');
+            //     }
+
+            // };
+
+            // let stoleSecretIdentity = hero.getSecretIdentity;
+            // console.log(stoleSecretIdentity());
+            // console.log(hero.getSecretIdentity());   <a id="myAnchor" href="https://w3schools.com/">Go to W3Schools.com</a>
         </script>
     </body>
 

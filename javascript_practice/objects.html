@@ -12,6 +12,7 @@
     <body>
         <div id="console-root"></div>
         <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
+        <!--<img src="../js-assignments/assignment-3/assets/on.png">-->
         <script>
             // const person = {};
             // console.log(person);
@@ -100,7 +101,75 @@
             // let person2 = Object.create(person1);
             // console.log(person2.name);
             // person2.greeting();
+
+            // function Person(firstName, lastName) {
+            //     this.firstName = firstName;
+            //     this.lastName = lastName;
+            // }
+
+            // const member = new Person('Lydia', 'Hallie');
+            // Person.getFullName = function() {
+            //     return `${this.firstName} ${this.lastName}`;
+            // };
+
+            // console.log(member.getFullName());
+
+
+            // function Person(firstName, lastName) {
+            //     this.firstName = firstName;
+            //     this.lastName = lastName;
+            // }
+            // const member2 = new Person('Lydia2', 'Hallie2');
+            // member2.getFullName = function() {
+            //     return `${this.firstName} ${this.lastName}`;
+            // };
+            // console.log(member2.getFullName());
+
+            // class Person {
+            //     constructor(firstName, lastName) {
+            //         this.firstName = firstName;
+            //         this.lastName = lastName;
+            //     }
+            //     static getFullName() {
+            //         return `${this.firstName} ${this.lastName}`;
+            //     };
+            // }
+            // Person.firstName = 'override firstName';
+            // Person.lastName = 'override lasttName';
+            // //  const member1 = new Person('Lydia1', 'Hallie1');
+            // //  console.log(member1.getFullName);
+            // console.log(Person.getFullName());
+
+            // console.log('first statement');
+            // let userDetails;
+            // getUserDetails(1, function(userDetails) {
+            //     console.log("userDetails", userDetails);
+            // });
+            // console.log('last details');
+
+            // function getUserDetails(id, callback) {
+            //     setTimeout(() => {
+            //         console.log('Takes 2 sec time');
+            //         callback({ id: id, userName: 'jack' });
+            //     }, 2000);
+            // }
+
+            function loadImage(url, onSuccessLoadImage) {
+                const imgEle = document.createElement('img');
+                imgEle.onload = () => {
+                    console.log(`${url} Image is loaded`);
+                    onSuccessLoadImage(imgEle);
+                };
+                setTimeout(() => { imgEle.src = url }, 3000);
+            }
+            loadImage('../js-assignments/assignment-3/assets/on.png', imgEle => {
+                document.body.appendChild(imgEle);
+                console.log('image is appended to the body');
+
+                loadImage('../js-assignments/assignment-3/assets/on.png')
+            })
         </script>
+
     </body>
 
 </html>
