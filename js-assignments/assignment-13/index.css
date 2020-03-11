@@ -1,20 +1,22 @@
 h3 {
     color: green;
     border-bottom: 1px solid grey;
+    text-transform: capitalize;
 }
 
-h1,
-.loading {
+h1 {
     text-align: center;
+}
+
+.loading,
+.text {
+    display: flex;
+    justify-content: space-around;
 }
 
 h3,
 p {
     margin: 10px;
-}
-
-h3 {
-    text-transform: capitalize;
 }
 
 .main-div {

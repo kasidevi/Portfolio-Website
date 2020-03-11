@@ -19,11 +19,13 @@
 let posts = document.getElementById('posts');
 let loading = document.getElementById('loading');
 let selectUserName = document.getElementById('selectUserName');
+const textBelowDropDown = document.getElementById('text');
 fetch("https://5e68646fd426c00016b7cf4e.mockapi.io/api/v1/users")
   .then(response => response.json())
   .then(json => { allNamesInUsers(json); })
 
 loading.style.display = 'none';
+textBelowDropDown.style.display = 'flex';
 
 function allNamesInUsers(json) {
   let intiallyBlankUserName = document.createElement('option');
@@ -45,6 +47,7 @@ selectUserName.onchange = () => {
     posts.removeChild(item);
   });
   loading.style.display = 'flex';
+  textBelowDropDown.style.display = 'none';
   fetch("https://5e68646fd426c00016b7cf4e.mockapi.io/api/v1/users/" + `${selectUserName.value}` + "/posts")
     .then(response => response.json())
     .then(json => { loadPosts(json); });
@@ -69,6 +72,7 @@ function loadPosts(json) {
     mainDiv.appendChild(comments);
     posts.appendChild(mainDiv);
 
+    textBelowDropDown.style.display = 'none';
     loading.style.display = 'none';
   });
 

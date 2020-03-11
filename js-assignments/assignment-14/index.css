@@ -1,0 +1,47 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.calculate-car-speed {
+    margin-top: 100px;
+    background-color: white;
+    padding: 10px;
+    /*background-image: white;*/
+}
+
+button {
+    border-radius: 2px;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.footer-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.start-stop {
+    margin-bottom: 20px;
+    background-color: green;
+    border: 1px solid green;
+}
+
+.start-stop:hover {
+    border: 2px solid lightgreen;
+}
+
+.accelarate,
+.decelerate {
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+}
+
+.add-car {
+    float: right;
+    background-color: blue;
+    border: none;
+    margin-top: -70px;
+}
