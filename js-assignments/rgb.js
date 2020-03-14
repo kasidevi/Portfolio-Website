@@ -28,8 +28,8 @@ class colorObject {
     }
 }
 
-const colorObjectInstance = new colorObject();
+const colorObjectInstance = new colorObject('red', 'green', 'blue');
 
 setInterval(() => {
-
+    colorObjectInstance.redColor();
 }, 3000);

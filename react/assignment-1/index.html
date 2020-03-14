@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>React Template</title>
+    <style>
+      .strike-through {
+        margin: 20px;
+        padding: 15px;
+        background-color: white;
+        font-size: 25px;
+        text-decoration: line-through;
+        box-shadow: 0px 0px 3px 3px #f2f2f2;
+        display: inline-block;
+      }
+
+      .standard-img,
+      .rounded-img,
+      .circular-img {
+        width: 200px;
+        margin: 20px;
+        background-color: lightgreen;
+      }
+
+      .rounded-img {
+        border-radius: 20px;
+      }
+
+      .circular-img {
+        border-radius: 50%;
+      }
+
+      .bunch-of-images {
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        align-items: center;
+      }
+
+      .all-messages {
+        /*text-align: center;*/
+        background-color: white;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0px 0px 3px 3px #f2f2f2;
+        color: white;
+        font-size: 20px;
+      }
+
+      .success-message,
+      .warning-message,
+      .info-message,
+      .error-message {
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+
+      .success-message {
+        background-color: #28a745;
+      }
+
+      .warning-message {
+        background-color: #ffc107;
+      }
+
+      .info-message {
+        background-color: #17a2b8;
+      }
+
+      .error-message {
+        background-color: #dc3545;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--<div id="console-root"></div>-->
+    <div id="root"></div>
+    <div id="root1"></div>
+    <div id="root2"></div>
+    <!--<script src="https://tap.ibhubs.in/utils/console.js"></script>-->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="index.js"></script>
+  </body>
+
+</html>
