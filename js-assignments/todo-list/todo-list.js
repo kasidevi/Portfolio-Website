@@ -56,7 +56,6 @@ function deleteList(createSpanForDeleteMark, createliTag, createCheckBox) {
         if (restOfItems === 0 && completedList === 0) {
             footer.style.display = "none";
         }
-
         noOfItemsLeft.textContent = `${restOfItems} itemsLeft`;
     };
 }

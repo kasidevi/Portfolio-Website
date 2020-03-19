@@ -1,6 +1,5 @@
-// Write your React Code here
-/*global ReactDOM*/
-/* global React*/
+import React from 'react';
+
 let carsId = 2;
 class Car extends React.Component {
     constructor(props) {
@@ -83,7 +82,6 @@ class CarList extends React.Component {
         this.setState(state => ({ carsList: state.carsList = [...state.carsList, carId] }));
         //console.log(this.state.carsList);
         carsId++;
-
     }
     removeCarFromCarsList = (index) => {
         //    this.setState(state => ({ carsList: state.carsList = [...state.carsList, state.carsList.length + 1] }));  
@@ -111,6 +109,6 @@ class CarList extends React.Component {
         </div>);
     }
 }
-ReactDOM.render(<CarList />, root);
 
-//export { CarList, Car };
+
+export { CarList };

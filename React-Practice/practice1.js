@@ -509,12 +509,3 @@
 // );
 
 //js exam2
-function welcome(firstName) {
-    if (firstName == ["Ricky"]) {
-        return "Hey Welcome";
-    }
-    else {
-        return "Who are you?";
-    }
-}
-console.log(welcome(["Ricky"]));
