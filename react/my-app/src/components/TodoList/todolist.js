@@ -36,13 +36,14 @@ class TodoList extends React.Component {
         let listOfObjects = [...this.state.inputValues];
         let removeTodoId = listOfObjects.indexOf(removeTodo);
         listOfObjects.splice(removeTodoId, 1);
-        let del = window.confirm('Do you really want to delete?');
-        if (del == true) {
+        let delTodoConfirmation = window.confirm('Do you really want to delete?');
+        if (delTodoConfirmation === true) {
             this.setState({ inputValues: listOfObjects });
         }
     }
 
     todoListCheckedOrNot = (checkbox) => {
+        //  alert(event);
         let listOfObjects = [...this.state.inputValues];
         let index = listOfObjects.indexOf(checkbox);
         listOfObjects[index].isChecked = !listOfObjects[index].isChecked;
@@ -91,6 +92,8 @@ class TodoList extends React.Component {
                 return <div> {completedList.map((todo)=>
                 <Todos  key={todo.id} checkbox={this.todoListCheckedOrNot} removeTodo={this.removeList}  userInput={todo} classNameToLinethrough={todo.isChecked?'user-text-linethrough':'user-text' }/>)}
                 </div>;
+            default:
+                throw Error('Invalid state');
         }
     }
 
@@ -100,7 +103,7 @@ class TodoList extends React.Component {
         <h1>todos</h1>
         <input className='user-input-field' type='text' placeholder='What needs to be done?' onKeyDown={this.enterKey}></input>
         
-           {/*<div> {this.state.inputValues.map((todo)=><Todos userInput={todo} />)}</div>
+        {/*<div> {this.state.inputValues.map((todo)=><Todos userInput={todo} />)}</div>
         <div> 
         {this.state.inputValues.map((todo)=>
         <Todos checkbox={this.todoListCheckedOrNot} removeTodo={this.removeList}  userInput={todo} all={this.allTodos}

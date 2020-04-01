@@ -89,7 +89,7 @@ class CarList extends React.Component {
         let array = [...this.state.carsList];
         let index1 = array.indexOf(parseInt(index));
         array.splice(parseInt(index1), 1);
-        if (array.length == 0) {
+        if (array.length === 0) {
             carsId = 1;
         }
         else {
