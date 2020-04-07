@@ -55,8 +55,6 @@ class App extends React.Component {
             <li>
               <Link to="/CountriesDashboardApp">Countries DashboardApp</Link>
             </li>
-            
-            
           </ul>
         </nav>
 

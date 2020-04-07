@@ -18,6 +18,10 @@
     color: white;
 }
 
+.header {
+    padding: 10px 20px 10px 20px;
+}
+
 .all-countries {
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +33,7 @@
 .search-select-country {
     display: flex;
     justify-content: space-between;
-    padding: 5px 0px 5px 0px;
+    padding: 10px 20px 10px 20px;
 }
 
 .each-country {

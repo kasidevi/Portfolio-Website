@@ -4,7 +4,7 @@ import { Header } from '../Header/Header.js';
 import '../Header/Header.css';
 import { CountriesFilterBar } from '../CountriesFilterBar/CountriesFilterBar.js';
 import { Countries } from '../Countries/Countries.js';
-//import Loader from 'react-loader-spinner';
+
 let regions = [];
 class CountriesDashboardApp extends React.Component {
     constructor(props) {
@@ -54,13 +54,7 @@ class CountriesDashboardApp extends React.Component {
     }
 
     onChangeSearchText = (event) => {
-        let regex = new RegExp(/^[a-zA-z]+$/);
-        if (regex.test(event.target.value)) {
-            this.setState({ searchText: event.target.value });
-        }
-        else {
-            this.setState({ searchText: this.state.searchText });
-        }
+        this.setState({ searchText: event.target.value });
     }
     onChangeSelectedRegion = (event) => {
         this.setState({ selectedRegion: event.target.value });

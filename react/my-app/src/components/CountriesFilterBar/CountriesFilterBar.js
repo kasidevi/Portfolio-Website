@@ -9,12 +9,11 @@ class CountriesFilterBar extends React.Component {
                        searchText={this.props.searchText} 
                        selectedTheme={this.props.selectedTheme}
                        changeThemeLight={this.props.changeThemeLight}/>
-        <SelectRegion onChangeSelectedRegion={this.props.onChangeSelectedRegion}
+        <SelectRegion onChangeSelectedRegion={this.props.onChangeSelectedRegion} 
                       regionOptions={this.props.regionOptions}
                       selectedRegion={this.props.selectedRegion}
                       selectedTheme={this.props.selectedTheme}
                       changeThemeLight={this.props.changeThemeLight}/>
-        
         </div>);
     }
 }

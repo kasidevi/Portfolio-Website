@@ -28,8 +28,7 @@ class CountryDetails extends React.Component {
     goBackFunction = () => {
         this.props.history.goBack();
     }
-
-    call = (item, id) => {
+    displayUniqueCountryDetails = (item, id) => {
         if (item.alpha3Code === id) {
             return <div style={countryStylings}>
             <div style={margin}>
@@ -56,6 +55,8 @@ class CountryDetails extends React.Component {
             </div>;
         }
     }
+
+
     borderNames = (itemAlphaCode) => {
         let alpha3CodeName = this.state.countryDetails.map(item => {
             if (itemAlphaCode === item.alpha3Code)
@@ -72,9 +73,10 @@ class CountryDetails extends React.Component {
        
        {this.state.countryDetails.map(item=>
        <div>
-       {this.call(item,id)}
+       {this.displayUniqueCountryDetails(item,id)}
        </div>
-       )}
+       )};
+         
         </div>;
     }
 }
